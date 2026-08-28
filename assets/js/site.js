@@ -45,11 +45,8 @@
 
   var sizes = ['normal', 'large', 'xlarge'];
   var sizeSelect = document.getElementById('text-size');
-  var sizeButtons = Array.prototype.slice.call(
-    document.querySelectorAll('.textsize-seg button')
-  );
 
-  if (sizeSelect || sizeButtons.length) {
+  if (sizeSelect) {
     var apply = function (size, save) {
       if (sizes.indexOf(size) === -1) size = 'normal';
       if (size === 'normal') {
@@ -57,10 +54,7 @@
       } else {
         root.setAttribute('data-text', size);
       }
-      if (sizeSelect && sizeSelect.value !== size) sizeSelect.value = size;
-      sizeButtons.forEach(function (b) {
-        b.setAttribute('aria-pressed', b.getAttribute('data-size') === size ? 'true' : 'false');
-      });
+      if (sizeSelect.value !== size) sizeSelect.value = size;
       if (save) {
         try {
           localStorage.setItem('zolsi-text', size);
@@ -75,16 +69,8 @@
 
     apply(stored, false);
 
-    if (sizeSelect) {
-      sizeSelect.addEventListener('change', function () {
-        apply(sizeSelect.value, true);
-      });
-    }
-
-    sizeButtons.forEach(function (b) {
-      b.addEventListener('click', function () {
-        apply(b.getAttribute('data-size'), true);
-      });
+    sizeSelect.addEventListener('change', function () {
+      apply(sizeSelect.value, true);
     });
   }
 
