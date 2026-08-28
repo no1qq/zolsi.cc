@@ -112,4 +112,12 @@
       el.classList.add("is-in");
     });
   }
+  
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") {
+      document.body.style.animation = "none";
+      void document.body.offsetWidth;
+      document.body.style.animation = "page-fade-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards";
+    }
+  });
 })();
