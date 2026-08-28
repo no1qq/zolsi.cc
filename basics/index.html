@@ -40,11 +40,15 @@
         <li class="nav-help"><a href="/get-help/">Get help</a></li>
       </ul>
     </nav>
-    <div class="textsize" role="group" aria-label="Text size">
-      <span class="textsize-label" aria-hidden="true">Text</span>
-      <button type="button" data-size="normal" aria-pressed="true"><span aria-hidden="true">A</span><span class="u-visually-hidden">Normal text size</span></button>
-      <button type="button" data-size="large" aria-pressed="false"><span aria-hidden="true">A</span><span class="u-visually-hidden">Large text size</span></button>
-      <button type="button" data-size="xlarge" aria-pressed="false"><span aria-hidden="true">A</span><span class="u-visually-hidden">Extra large text size</span></button>
+    <div class="textsize">
+      <label class="textsize-label" for="text-size">Text<span class="u-visually-hidden"> size</span></label>
+      <span class="select">
+        <select id="text-size">
+          <option value="normal">Normal</option>
+          <option value="large">Large</option>
+          <option value="xlarge">Largest</option>
+        </select>
+      </span>
     </div>
     <button class="nav-toggle" type="button" hidden aria-expanded="false" aria-controls="primary-nav">
       <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span>

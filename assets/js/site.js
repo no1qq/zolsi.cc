@@ -44,9 +44,9 @@
   }
 
   var sizes = ['normal', 'large', 'xlarge'];
-  var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-size]'));
+  var sizeSelect = document.getElementById('text-size');
 
-  if (buttons.length) {
+  if (sizeSelect) {
     var apply = function (size, save) {
       if (sizes.indexOf(size) === -1) size = 'normal';
       if (size === 'normal') {
@@ -54,9 +54,7 @@
       } else {
         root.setAttribute('data-text', size);
       }
-      buttons.forEach(function (b) {
-        b.setAttribute('aria-pressed', b.getAttribute('data-size') === size ? 'true' : 'false');
-      });
+      if (sizeSelect.value !== size) sizeSelect.value = size;
       if (save) {
         try {
           localStorage.setItem('zolsi-text', size);
@@ -71,10 +69,8 @@
 
     apply(stored, false);
 
-    buttons.forEach(function (b) {
-      b.addEventListener('click', function () {
-        apply(b.getAttribute('data-size'), true);
-      });
+    sizeSelect.addEventListener('change', function () {
+      apply(sizeSelect.value, true);
     });
   }
 

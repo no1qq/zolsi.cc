@@ -94,8 +94,9 @@
 .textsize {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.5rem;
 }
+html:not(.js) .textsize { display: none; }
 .textsize-label {
   font-size: 0.8125rem;
   font-weight: 700;
@@ -103,31 +104,44 @@
   letter-spacing: 0.1em;
   color: var(--ink-3);
 }
-.textsize button {
-  min-width: 44px;
-  min-height: 44px;
+
+.select {
+  position: relative;
+  display: inline-flex;
+}
+.select select {
+  appearance: none;
+  -webkit-appearance: none;
   font-family: var(--sans);
+  font-size: var(--step--1);
   font-weight: 700;
-  background: transparent;
-  color: var(--ink-2);
+  line-height: 1;
+  color: var(--ink);
+  background: var(--paper);
   border: 1px solid var(--rule-ui);
   border-radius: 2px;
+  min-height: 44px;
+  padding: 0 2.1rem 0 0.75rem;
   cursor: pointer;
-  line-height: 1;
 }
-.textsize button:nth-of-type(1) { font-size: 0.875rem; }
-.textsize button:nth-of-type(2) { font-size: 1.0625rem; }
-.textsize button:nth-of-type(3) { font-size: 1.25rem; }
-.textsize button:hover { background: var(--paper-2); }
-.textsize button[aria-pressed="true"] {
-  background: var(--ink);
-  border-color: var(--ink);
-  color: var(--paper);
+.select select:hover { background: var(--paper-2); }
+.select::after {
+  content: "";
+  position: absolute;
+  right: 0.85rem;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--ink-2);
+  border-bottom: 2px solid var(--ink-2);
+  transform: translateY(-70%) rotate(45deg);
+  pointer-events: none;
 }
 
 @media (max-width: 63.999em) {
+  .header-inner { gap: 0.5rem 0.6rem; }
   .textsize { order: 2; }
-  .nav-toggle { order: 3; }
+  .nav-toggle { order: 3; padding: 0 0.85rem; }
   .nav { order: 4; width: 100%; }
   .nav-list {
     width: 100%;
@@ -149,6 +163,18 @@
   .nav-list .nav-help a {
     margin-top: 0.75rem;
     text-align: center;
+  }
+}
+
+@media (max-width: 22.5em) {
+  .textsize-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
   }
 }
 

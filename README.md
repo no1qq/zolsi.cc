@@ -57,9 +57,10 @@ back to `.section` will double every gap on the site.
   no advertising, no tracking cookies, no CDN, no external scripts. The only
   stored value is the reader's chosen text size, in their own browser.
 - **Every page must stay readable with JavaScript off.** JavaScript only
-  enhances: the mobile menu, the text size control and the scroll reveal all
-  degrade to working plain HTML. The questions on the home page are plain
-  `<details>` elements with no script and no animation at all.
+  enhances. Without it the navigation renders expanded instead of behind the
+  menu button, the scroll reveal is skipped, and the text size control hides
+  itself rather than sitting there doing nothing. The questions on the home
+  page are plain `<details>` elements with no script and no animation at all.
 - **WCAG AA throughout, AAA for body text contrast.** Interactive targets at
   least 44px, visible focus rings, a skip link, and `prefers-reduced-motion`
   honoured. Body text is 19px at a 1.7 line height.
