@@ -1,48 +1,9 @@
 # Zolsi.CC
 
 Internet safety in plain language, for children, parents and grandparents.
-
-A static site about staying safe online, centred on child safety. It explains
-how the common harms actually work, what the warning signs look like, and which
-real organisations to contact when something has gone wrong.
+A static site about staying safe online, centred on child safety.
 
 Live at [zolsi.cc](https://zolsi.cc).
-
-## Principles
-
-- **Readable first.** Short sentences, ordinary words, every technical term
-  explained on first use. Body text is set in Atkinson Hyperlegible, designed by
-  the Braille Institute for readers with low vision.
-- **Calm, not alarming.** The risks are described accurately rather than
-  dramatically.
-- **Verified, or not published.** Every organisation and phone number on the
-  get help page was checked against that organisation's own site. Anything that
-  could not be confirmed is not on the page.
-- **Nothing collected.** No accounts, analytics, advertising, tracking cookies
-  or third party scripts. Fonts are self hosted. The only stored value is the
-  reader's chosen text size, kept in their own browser.
-- **Works everywhere.** Every page is fully readable with JavaScript disabled.
-
-## Structure
-
-```
-index.html              home
-basics/                 passwords, sharing, scams, settings
-for-teens/              written directly to young people
-for-parents/            for parents and carers
-warning-signs/          grooming pattern, fake profiles, sextortion
-get-help/               verified organisations
-about/                  what this is and is not
-404.html
-assets/css/base.css     tokens, reset, type scale, layout primitives
-assets/css/components.css  header, footer, cards, callouts, sections
-assets/js/site.js       nav toggle, text size control, scroll reveal
-assets/fonts/           self hosted woff2 plus OFL licences
-assets/img/             logo and favicons
-Logos/                  original source logos
-```
-
-No build step and no dependencies. The HTML is the source.
 
 ## Running it locally
 
@@ -52,45 +13,76 @@ Any static server works. From the repository root:
 npx serve .
 ```
 
-or
+Links are root relative, so opening the HTML files straight from the filesystem
+will not resolve them. Use a server.
+
+## Structure
 
 ```
-python -m http.server 8000
+index.html                  home
+basics/                     passwords, sharing, scams, settings
+for-teens/                  written directly to young people
+for-parents/                for parents and carers
+warning-signs/              grooming pattern, fake profiles, sextortion
+get-help/                   verified organisations
+about/                      what the site is and is not
+404.html
+assets/css/base.css         tokens, reset, type scale, layout primitives
+assets/css/components.css   header, footer, entries, callouts, sections
+assets/js/site.js           nav toggle, text size control, question
+                            accordion, scroll reveal
+assets/fonts/               self hosted woff2 plus OFL licences
+assets/img/                 logo and favicons
+Logos/                      original source logos
+CNAME, .nojekyll            GitHub Pages configuration
 ```
 
-Then open the address it prints. Links are root relative, so opening the HTML
-files directly from the filesystem will not resolve them correctly - use a
-server.
+No build step and no dependencies. The HTML is the source.
 
-## Accessibility
+## Editing pages
 
-- Target is WCAG AA throughout, AAA for body text contrast.
-- Base body text is 19px at a 1.7 line height, with a measure of about 66
-  characters.
-- A text size control in the header scales the whole site and persists.
-- All interactive targets are at least 44px, most 48px.
-- Visible focus rings on everything focusable, plus a skip to content link.
-- `prefers-reduced-motion` disables the scroll reveal entirely.
+**The header and footer are duplicated in all eight HTML files.** There is no
+templating layer, so a change to the navigation, the footer or anything in
+`<head>` has to be made in every one of them. This is deliberate: it keeps the
+site dependency free and means navigation works with JavaScript disabled. Just
+do not change one page and assume the rest followed.
 
-## Logo
+Spacing is composed from tokens in `base.css`. Sections carry bottom padding
+only, and `.section-ruled` adds the top padding under its rule, so a gap
+between two sections is `--section-gap` plus `--rule-gap`. Adding top padding
+back to `.section` will double every gap on the site.
 
-`Logo-Transparent.png` is a near white mark, so it is used directly on the dark
-footer band and inverted with CSS in the light header. `Logo-Background.png` is
-used only to generate the favicons. Scaled copies live in `assets/img/`.
+## Constraints worth not breaking
+
+- **No third party requests at runtime.** Fonts are self hosted. No analytics,
+  no advertising, no tracking cookies, no CDN, no external scripts. The only
+  stored value is the reader's chosen text size, in their own browser.
+- **Every page must stay readable with JavaScript off.** JavaScript only
+  enhances: the mobile menu, the text size control, the question accordion and
+  the scroll reveal all degrade to working plain HTML.
+- **WCAG AA throughout, AAA for body text contrast.** Interactive targets at
+  least 44px, visible focus rings, a skip link, and `prefers-reduced-motion`
+  honoured. Body text is 19px at a 1.7 line height.
+- **The logo asset is near white.** `Logo-Transparent.png` is used as is on the
+  dark footer band and inverted with CSS in the light header. That inversion is
+  intentional, not a bug. `Logo-Background.png` only generates the favicons.
+
+## Maintaining the get help page
+
+The most important recurring job. `get-help/` lists real reporting routes,
+takedown services and helplines, and someone will follow them at a bad moment.
+
+- Re-check every link, phone number and set of opening hours against the
+  organisation's own site.
+- Nothing goes on that page that cannot be confirmed there.
+- The date of the last check is printed on the page. Update it when you check.
 
 ## Deployment
 
 GitHub Pages from `main`, with `CNAME` set to `zolsi.cc` and `.nojekyll`
 present. DNS for the apex domain must point at GitHub's Pages servers; the
-current records are listed in
+current records are in
 [GitHub's custom domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
-
-## Maintenance
-
-The most important recurring job is re-checking the links, phone numbers and
-opening hours on `get-help/`. Someone will follow them at a bad moment. The
-date of the last check is printed on that page and should be updated whenever
-it is done.
 
 ## Licence
 
@@ -100,8 +92,8 @@ Split, because most of this repository is writing rather than software. See
 - **The writing** (prose, page copy, SVG diagrams): Creative Commons
   Attribution 4.0 International. Full text in [LICENSE-CONTENT](LICENSE-CONTENT).
   Reuse and adapt it freely, including commercially, with credit and a note of
-  any changes. Safety information is only useful if it travels.
-- **The code** (HTML, CSS, JavaScript, tooling): MIT.
+  any changes.
+- **The code** (HTML, CSS, JavaScript): MIT.
 - **The fonts**: SIL Open Font License 1.1, licences in `assets/fonts/`.
 - **The name and logo**: all rights reserved. Credit Zolsi.CC as a source, but
   do not present an adapted version as being Zolsi.CC.

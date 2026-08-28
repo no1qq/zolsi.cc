@@ -58,20 +58,15 @@
 :root {
   --paper: #faf8f4;
   --paper-2: #f2eee5;
-  --paper-3: #e9e3d6;
   --ink: #191712;
   --ink-2: #4d4840;
   --ink-3: #6f6961;
   --rule: #ddd5c6;
-  --rule-strong: #c4bbaa;
   --rule-ui: #8c8272;
   --green: #1f5d4c;
   --green-deep: #123a2f;
-  --green-wash: #e8f0ec;
   --clay: #93381f;
-  --clay-wash: #f7ece7;
   --night: #14120d;
-  --night-2: #221f18;
   --on-night: #f4f1ea;
   --on-night-2: #a8a294;
 
@@ -94,7 +89,8 @@
   --sp-3: 1.5rem;
   --sp-4: 2.5rem;
   --sp-5: 4rem;
-  --sp-6: clamp(4rem, 9vw, 7.5rem);
+  --section-gap: clamp(3.5rem, 7vw, 6rem);
+  --rule-gap: clamp(2.25rem, 4vw, 3.5rem);
 
   --focus: #1f5d4c;
 }
@@ -168,20 +164,15 @@ hr {
   margin-inline: auto;
 }
 
-.wrap-narrow {
-  width: min(100% - (var(--gutter) * 2), 46rem);
-  margin-inline: auto;
+.section { padding-block-end: var(--section-gap); }
+.section.section-ruled {
+  border-top: 1px solid var(--rule);
+  padding-block-start: var(--rule-gap);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: var(--sp-4) var(--gutter);
-}
-
-.section { padding-block: var(--sp-6); }
-.section + .section { padding-top: 0; }
-.section.section-ruled { border-top: 1px solid var(--rule); padding-top: var(--sp-6); }
+.hero > .wrap > :first-child,
+.section > .wrap > :first-child,
+.band > .wrap > :first-child { margin-top: 0; }
 
 .skip {
   position: absolute;
