@@ -29,8 +29,7 @@ about/                      what the site is and is not
 404.html
 assets/css/base.css         tokens, reset, type scale, layout primitives
 assets/css/components.css   header, footer, entries, callouts, sections
-assets/js/site.js           nav toggle, text size control, question
-                            accordion, scroll reveal
+assets/js/site.js           nav toggle, text size control, scroll reveal
 assets/fonts/               self hosted woff2 plus OFL licences
 assets/img/                 logo and favicons
 Logos/                      original source logos
@@ -58,8 +57,9 @@ back to `.section` will double every gap on the site.
   no advertising, no tracking cookies, no CDN, no external scripts. The only
   stored value is the reader's chosen text size, in their own browser.
 - **Every page must stay readable with JavaScript off.** JavaScript only
-  enhances: the mobile menu, the text size control, the question accordion and
-  the scroll reveal all degrade to working plain HTML.
+  enhances: the mobile menu, the text size control and the scroll reveal all
+  degrade to working plain HTML. The questions on the home page are plain
+  `<details>` elements with no script and no animation at all.
 - **WCAG AA throughout, AAA for body text contrast.** Interactive targets at
   least 44px, visible focus rings, a skip link, and `prefers-reduced-motion`
   honoured. Body text is 19px at a 1.7 line height.
