@@ -123,27 +123,34 @@
   });
 
   window.switchLanguage = function (lang) {
-    try { localStorage.setItem("zolsi-lang", lang); } catch(e) {}
+    try {
+      localStorage.setItem("zolsi-lang", lang);
+    } catch (e) {}
     var currentPath = window.location.pathname;
     currentPath = currentPath.replace(/^\/lang\/(es|de)\//, "/");
     if (lang === "en") {
       window.location.href = currentPath;
     } else {
-      window.location.href = "/lang/" + lang + (currentPath === "/" ? "" : currentPath);
+      window.location.href =
+        "/lang/" + lang + (currentPath === "/" ? "" : currentPath);
     }
   };
 
   try {
     var storedLang = localStorage.getItem("zolsi-lang");
-    if (!storedLang && !window.location.pathname.match(/^\/lang\/(es|de)(\/|$)/)) {
+    if (
+      !storedLang &&
+      !window.location.pathname.match(/^\/lang\/(es|de)(\/|$)/)
+    ) {
       var browserLang = navigator.language.split("-")[0];
       if (browserLang === "es" || browserLang === "de") {
         localStorage.setItem("zolsi-lang", browserLang);
         var currentPath = window.location.pathname;
-        window.location.href = "/lang/" + browserLang + (currentPath === "/" ? "" : currentPath);
+        window.location.href =
+          "/lang/" + browserLang + (currentPath === "/" ? "" : currentPath);
       }
     }
-  } catch(e) {}
+  } catch (e) {}
 
   var langSelect = document.getElementById("lang-select");
   if (langSelect) {
