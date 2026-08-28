@@ -102,8 +102,8 @@
   border: 1px solid var(--rule-ui);
   border-radius: 2px;
 }
-.textsize:hover { background: var(--paper-2); }
 html:not(.js) .textsize { display: none; }
+.textsize-seg { display: none; }
 
 .textsize-label {
   font-size: 0.75rem;
@@ -154,6 +154,41 @@ html:not(.js) .textsize { display: none; }
     outline-offset: 3px;
   }
   .textsize select:focus-visible { outline: none; }
+}
+
+@media (max-width: 63.999em) {
+  .textsize:hover { background: var(--paper-2); }
+}
+
+@media (min-width: 64em) {
+  .textsize { padding-right: 0.3rem; }
+  .textsize::after { display: none; }
+  .textsize-select { display: none; }
+  .textsize-seg {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .textsize-seg button {
+    min-width: 40px;
+    min-height: 40px;
+    font-family: var(--sans);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--ink-2);
+    background: transparent;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .textsize-seg button:nth-of-type(1) { font-size: 0.8125rem; }
+  .textsize-seg button:nth-of-type(2) { font-size: 1rem; }
+  .textsize-seg button:nth-of-type(3) { font-size: 1.25rem; }
+  .textsize-seg button:hover { background: var(--paper-2); color: var(--ink); }
+  .textsize-seg button[aria-pressed="true"] {
+    background: var(--ink);
+    color: var(--paper);
+  }
 }
 
 @media (max-width: 63.999em) {
