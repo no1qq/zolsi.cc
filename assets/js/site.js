@@ -81,59 +81,81 @@
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   var faqItems = document.querySelectorAll('.faq details');
 
-  if (faqItems.length && typeof Element.prototype.animate === 'function') {
-    Array.prototype.forEach.call(faqItems, function (item) {
-      var summary = item.querySelector('summary');
-      var body = item.querySelector('.faq-body');
-      if (!summary || !body) return;
-      var running = null;
+  var EASE = 'cubic-bezier(0.32, 0.72, 0, 1)';
+  var OPEN_MS = 320;
+  var CLOSE_MS = 260;
 
-      var settle = function () {
-        body.style.overflow = '';
-        running = null;
-      };
+  Array.prototype.forEach.call(faqItems, function (item) {
+    var summary = item.querySelector('summary');
+    var body = item.querySelector('.faq-body');
+    if (!summary || !body) return;
 
-      summary.addEventListener('click', function (e) {
-        if (reduceMotion.matches) return;
-        e.preventDefault();
+    var timer = null;
+    var busy = false;
 
-        if (running) {
-          running.cancel();
-          running = null;
-        }
+    var clear = function () {
+      if (timer) {
+        clearTimeout(timer);
+        timer = null;
+      }
+      body.removeEventListener('transitionend', onEnd);
+    };
 
-        body.style.overflow = 'hidden';
+    function onEnd(e) {
+      if (e && (e.target !== body || e.propertyName !== 'height')) return;
+      clear();
+      if (item.hasAttribute('data-closing')) {
+        item.open = false;
+        item.removeAttribute('data-closing');
+      }
+      body.style.transition = '';
+      body.style.height = '';
+      body.style.overflow = '';
+      busy = false;
+    }
 
-        if (item.open) {
-          var from = body.offsetHeight;
-          running = body.animate(
-            [
-              { height: from + 'px', opacity: 1 },
-              { height: '0px', opacity: 0 }
-            ],
-            { duration: 260, easing: 'cubic-bezier(0.4, 0, 0.2, 1)' }
-          );
-          running.onfinish = function () {
-            item.open = false;
-            settle();
-          };
-          running.oncancel = settle;
-        } else {
-          item.open = true;
-          var to = body.offsetHeight;
-          running = body.animate(
-            [
-              { height: '0px', opacity: 0 },
-              { height: to + 'px', opacity: 1 }
-            ],
-            { duration: 320, easing: 'cubic-bezier(0.4, 0, 0.2, 1)' }
-          );
-          running.onfinish = settle;
-          running.oncancel = settle;
-        }
-      });
+    var run = function (from, to, ms) {
+      body.style.overflow = 'hidden';
+      body.style.transition = 'none';
+      body.style.height = from + 'px';
+      void body.offsetHeight;
+      body.style.transition = 'height ' + ms + 'ms ' + EASE;
+      body.style.height = to + 'px';
+      body.addEventListener('transitionend', onEnd);
+      timer = setTimeout(onEnd, ms + 120);
+    };
+
+    var fullHeight = function () {
+      var prev = body.style.height;
+      body.style.transition = 'none';
+      body.style.height = 'auto';
+      var h = body.offsetHeight;
+      body.style.height = prev;
+      return h;
+    };
+
+    summary.addEventListener('click', function (e) {
+      if (reduceMotion.matches) return;
+      e.preventDefault();
+      clear();
+
+      var current = busy
+        ? parseFloat(window.getComputedStyle(body).height) || 0
+        : item.open
+          ? body.offsetHeight
+          : 0;
+      busy = true;
+
+      if (item.open && !item.hasAttribute('data-closing')) {
+        item.setAttribute('data-closing', '');
+        run(current, 0, CLOSE_MS);
+      } else {
+        item.removeAttribute('data-closing');
+        item.open = true;
+        run(current, fullHeight(), OPEN_MS);
+      }
     });
-  }
+  });
 
   var reveals = document.querySelectorAll('.reveal');
   var motionOk = !reduceMotion.matches;

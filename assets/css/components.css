@@ -437,6 +437,11 @@
   opacity: 0;
 }
 .faq details[open] summary { color: var(--green-deep); }
+.faq details[data-closing] summary { color: var(--ink); }
+.faq details[data-closing] summary::before {
+  transform: translateY(-50%) rotate(90deg);
+  opacity: 1;
+}
 .faq-body { padding: 0 0 var(--sp-3); }
 .faq-body > :last-child { margin-bottom: 0; }
 
