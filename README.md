@@ -94,4 +94,14 @@ it is done.
 
 ## Licence
 
-MIT. See [LICENSE](LICENSE).
+Split, because most of this repository is writing rather than software. See
+[LICENSE](LICENSE) for the full statement.
+
+- **The writing** (prose, page copy, SVG diagrams): Creative Commons
+  Attribution 4.0 International. Full text in [LICENSE-CONTENT](LICENSE-CONTENT).
+  Reuse and adapt it freely, including commercially, with credit and a note of
+  any changes. Safety information is only useful if it travels.
+- **The code** (HTML, CSS, JavaScript, tooling): MIT.
+- **The fonts**: SIL Open Font License 1.1, licences in `assets/fonts/`.
+- **The name and logo**: all rights reserved. Credit Zolsi.CC as a source, but
+  do not present an adapted version as being Zolsi.CC.

@@ -1,6 +1,35 @@
-MIT License
+Zolsi.CC licensing
 
 Copyright (c) 2026 no1qq
+
+This repository holds three different kinds of work, and one licence cannot
+sensibly cover all of them. MIT alone was the wrong fit, because most of what
+is here is writing rather than software.
+
+
+1. THE WRITING - Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Covers all prose, headings, page copy, guidance, and the diagrams drawn as
+inline SVG.
+
+Full legal text: see LICENSE-CONTENT in this repository.
+Plain summary:   https://creativecommons.org/licenses/by/4.0/
+
+You are free to share and adapt this material, for any purpose including
+commercially, provided you give appropriate credit to Zolsi.CC, link to the
+licence, and indicate whether you made changes.
+
+Why this licence. This is safety information, and it is only useful if it
+travels. A school, a charity, a youth worker or a translator should be able to
+take it, adapt it, and pass it on without asking anyone. The attribution
+requirement costs a reuser almost nothing, and the requirement to state that
+changes were made matters here: altered safety advice should not be able to
+present itself as ours.
+
+
+2. THE CODE - MIT
+
+Covers the HTML structure, CSS, JavaScript and any build tooling.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +48,35 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+3. THE FONTS - SIL Open Font License 1.1
+
+Not our work, and licensed by their authors:
+
+  Atkinson Hyperlegible, Copyright 2020 Braille Institute of America, Inc.
+  Fraunces, Copyright 2018 The Fraunces Project Authors
+
+Their licences are included in full at:
+
+  assets/fonts/OFL-AtkinsonHyperlegible.txt
+  assets/fonts/OFL-Fraunces.txt
+
+
+4. THE NAME AND LOGO - all rights reserved
+
+The name "Zolsi.CC" and the Zolsi.CC logo are not covered by either licence
+above. CC BY 4.0 explicitly does not grant trademark rights, and this is
+deliberate: if you reuse or adapt this material, please credit Zolsi.CC as the
+source, but do not present your version as being Zolsi.CC or as endorsed by it.
+This matters more than usual for a site about child safety, where a reader
+needs to know whether what they are reading has actually been checked.
+
+
+5. A NOTE ON THE ADVICE ITSELF
+
+Nothing in these licences is a warranty that the guidance is correct, current
+or suitable for your situation, and none of it is legal or clinical advice.
+Helplines, reporting routes and laws differ between countries and change over
+time. If you republish this material, please re-verify the organisations and
+phone numbers on the get help page first.
