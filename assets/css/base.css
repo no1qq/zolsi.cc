@@ -93,6 +93,8 @@
   --rule-gap: clamp(2.25rem, 4vw, 3.5rem);
 
   --focus: #1f5d4c;
+
+  color-scheme: light;
 }
 
 html[data-text='large'] { font-size: 112.5%; }

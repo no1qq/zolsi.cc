@@ -92,50 +92,68 @@
 .nav-list .nav-help a[aria-current="page"] { color: var(--paper); }
 
 .textsize {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-html:not(.js) .textsize { display: none; }
-.textsize-label {
-  font-size: 0.8125rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--ink-3);
-}
-
-.select {
   position: relative;
   display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 48px;
+  padding-left: 0.9rem;
+  background: var(--paper);
+  border: 1px solid var(--rule-ui);
+  border-radius: 2px;
 }
-.select select {
+.textsize:hover { background: var(--paper-2); }
+html:not(.js) .textsize { display: none; }
+
+.textsize-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: var(--ink-3);
+  pointer-events: none;
+}
+
+.textsize select {
   appearance: none;
   -webkit-appearance: none;
+  align-self: stretch;
   font-family: var(--sans);
   font-size: var(--step--1);
   font-weight: 700;
   line-height: 1;
   color: var(--ink);
-  background: var(--paper);
-  border: 1px solid var(--rule-ui);
-  border-radius: 2px;
-  min-height: 44px;
-  padding: 0 2.1rem 0 0.75rem;
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0 2.25rem 0 0;
   cursor: pointer;
 }
-.select select:hover { background: var(--paper-2); }
-.select::after {
+.textsize select option {
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 400;
+}
+
+.textsize::after {
   content: "";
   position: absolute;
-  right: 0.85rem;
+  right: 0.95rem;
   top: 50%;
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-right: 2px solid var(--ink-2);
   border-bottom: 2px solid var(--ink-2);
-  transform: translateY(-70%) rotate(45deg);
+  transform: translateY(-72%) rotate(45deg);
   pointer-events: none;
+}
+
+@supports selector(:has(*)) {
+  .textsize:has(select:focus-visible) {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+  }
+  .textsize select:focus-visible { outline: none; }
 }
 
 @media (max-width: 63.999em) {
