@@ -90,6 +90,17 @@
       { rootMargin: '0px 0px -8% 0px', threshold: 0.08 }
     );
     Array.prototype.forEach.call(reveals, function (el) {
+      var items = el.querySelectorAll('.path, .entry, .faq details');
+      for (var i = 0; i < items.length; i++) {
+        var item = items[i];
+        item.style.animationDelay = (i * 60) + 'ms';
+        item.addEventListener('animationend', function(e) {
+          if (e.animationName === 'fade-up') {
+            this.style.animation = 'none';
+            this.style.opacity = '1';
+          }
+        });
+      }
       io.observe(el);
     });
   } else {
