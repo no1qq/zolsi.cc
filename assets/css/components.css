@@ -84,7 +84,9 @@
   padding: 0.7rem 0;
   border-bottom: 2px solid transparent;
   min-height: 44px;
-  transition: border-bottom-color 200ms ease, color 200ms ease;
+  transition:
+    border-bottom-color 200ms ease,
+    color 200ms ease;
 }
 .nav-list a:hover {
   border-bottom-color: var(--rule-ui);
@@ -99,7 +101,9 @@
   border: 0;
   padding: 0.7rem 1.1rem;
   border-radius: 2px;
-  transition: background-color 200ms ease, transform 150ms ease;
+  transition:
+    background-color 200ms ease,
+    transform 150ms ease;
 }
 .nav-list .nav-help a:hover {
   background: var(--green-deep);
