@@ -112,34 +112,35 @@
       el.classList.add("is-in");
     });
   }
-  
+
   document.addEventListener("visibilitychange", function () {
     if (document.visibilityState === "visible") {
       document.body.style.animation = "none";
       void document.body.offsetWidth;
-      document.body.style.animation = "page-fade-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards";
+      document.body.style.animation =
+        "page-fade-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards";
     }
   });
 
   window.switchLanguage = function (lang) {
     try { localStorage.setItem("zolsi-lang", lang); } catch(e) {}
     var currentPath = window.location.pathname;
-    currentPath = currentPath.replace(/^\/(es|de)\//, "/");
+    currentPath = currentPath.replace(/^\/lang\/(es|de)\//, "/");
     if (lang === "en") {
       window.location.href = currentPath;
     } else {
-      window.location.href = "/" + lang + (currentPath === "/" ? "" : currentPath);
+      window.location.href = "/lang/" + lang + (currentPath === "/" ? "" : currentPath);
     }
   };
 
   try {
     var storedLang = localStorage.getItem("zolsi-lang");
-    if (!storedLang && !window.location.pathname.match(/^\/(es|de)(\/|$)/)) {
+    if (!storedLang && !window.location.pathname.match(/^\/lang\/(es|de)(\/|$)/)) {
       var browserLang = navigator.language.split("-")[0];
       if (browserLang === "es" || browserLang === "de") {
         localStorage.setItem("zolsi-lang", browserLang);
         var currentPath = window.location.pathname;
-        window.location.href = "/" + browserLang + (currentPath === "/" ? "" : currentPath);
+        window.location.href = "/lang/" + browserLang + (currentPath === "/" ? "" : currentPath);
       }
     }
   } catch(e) {}
@@ -148,8 +149,8 @@
   if (langSelect) {
     var currentPath = window.location.pathname;
     var currentLang = "en";
-    if (currentPath.startsWith("/es/")) currentLang = "es";
-    if (currentPath.startsWith("/de/")) currentLang = "de";
+    if (currentPath.startsWith("/lang/es/")) currentLang = "es";
+    if (currentPath.startsWith("/lang/de/")) currentLang = "de";
     if (langSelect.value !== currentLang) langSelect.value = currentLang;
   }
 })();
