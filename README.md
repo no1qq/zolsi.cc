@@ -43,6 +43,7 @@ assets/css/                 base styles and component tokens
 assets/js/                  lightweight progressive enhancement scripts
 assets/fonts/               self-hosted WOFF2 fonts
 assets/img/                 logo and icon assets
+assets/brand/               high-resolution source brand assets
 ```
 
 ## Translations and Updates
