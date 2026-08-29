@@ -50,6 +50,7 @@ assets/img/                 logo and icon assets
 The site is translated across English, German, and Spanish. Changes to shared navigation, layout structure, or crisis reporting resources should be kept consistent across all language folders (`/`, `lang/de/`, `lang/es/`).
 
 When updating crisis resources in `get-help/`:
+
 - Always verify every phone number, URL, and operational hours directly with the official source organization.
 - Update the last-verified date shown on the page.
 
