@@ -1,271 +1,564 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Zolsi.CC - Internetsicherheit in einfacher Sprache</title>
-<meta name="description" content="Zolsi.CC erklärt, wie man online sicher bleibt, in einfacher Sprache, für Kinder, Eltern und Großeltern. Lerne Die Grundlagen, erkenne Warnsignale und finde echte Hilfe.">
-<link rel="canonical" href="https://zolsi.cc/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Zolsi.CC - Internetsicherheit in einfacher Sprache">
-<meta property="og:description" content="Zolsi.CC erklärt, wie man online sicher bleibt, in einfacher Sprache, für Kinder, Eltern und Großeltern. Lerne Die Grundlagen, erkenne Warnsignale und finde echte Hilfe.">
-<meta property="og:url" content="https://zolsi.cc/">
-<meta property="og:image" content="https://zolsi.cc/assets/img/icon-512.png">
-<meta name="theme-color" content="#faf8f4">
-<link rel="icon" href="/assets/img/icon-32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="/assets/img/icon-180.png">
-<link rel="preload" href="/assets/fonts/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/base.css">
-<link rel="stylesheet" href="/assets/css/components.css">
-<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('zolsi-text');if(t&&t!=='normal')document.documentElement.setAttribute('data-text',t)}catch(e){}</script>
-<script src="/assets/js/site.js" defer></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zolsi.CC - Internetsicherheit in einfacher Sprache</title>
+    <meta
+      name="description"
+      content="Zolsi.CC erklärt, wie man online sicher bleibt, in einfacher Sprache, für Kinder, Eltern und Großeltern. Lerne Die Grundlagen, erkenne Warnsignale und finde echte Hilfe."
+    />
+    <link rel="canonical" href="https://zolsi.cc/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Zolsi.CC - Internetsicherheit in einfacher Sprache"
+    />
+    <meta
+      property="og:description"
+      content="Zolsi.CC erklärt, wie man online sicher bleibt, in einfacher Sprache, für Kinder, Eltern und Großeltern. Lerne Die Grundlagen, erkenne Warnsignale und finde echte Hilfe."
+    />
+    <meta property="og:url" content="https://zolsi.cc/" />
+    <meta
+      property="og:image"
+      content="https://zolsi.cc/assets/img/icon-512.png"
+    />
+    <meta name="theme-color" content="#faf8f4" />
+    <link rel="icon" href="/assets/img/icon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/assets/img/icon-180.png" />
+    <link
+      rel="preload"
+      href="/assets/fonts/atkinson-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/fraunces-var.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <script>
+      document.documentElement.classList.add("js");
+      try {
+        var t = localStorage.getItem("zolsi-text");
+        if (t && t !== "normal")
+          document.documentElement.setAttribute("data-text", t);
+      } catch (e) {}
+    </script>
+    <script src="/assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Zum Inhalt springen</a>
 
-<a class="skip" href="#main">Zum Inhalt springen</a>
-
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="/lang/de/">
-      <img src="/assets/img/logo.png" width="256" height="256" alt="Zolsi.CC Startseite">
-    </a>
-    <nav class="nav" aria-label="Hauptmenü">
-      <ul class="nav-list" id="primary-nav">
-        <li><a href="/lang/de/basics/">Die Grundlagen</a></li>
-        <li><a href="/lang/de/for-teens/">Für Jugendliche</a></li>
-        <li><a href="/lang/de/for-parents/">Für Eltern</a></li>
-        <li><a href="/lang/de/warning-signs/">Warnsignale</a></li>
-        <li><a href="/lang/de/about/">Über uns</a></li>
-        <li class="nav-help"><a href="/lang/de/get-help/">Hilfe holen</a></li>
-      </ul>
-    </nav>
-    <div class="textsize">
-      <label class="textsize-label" for="lang-select">Sprache</label>
-      <select id="lang-select" onchange="window.switchLanguage(this.value)">
-        <option value="en">Englisch</option>
-        <option value="es">Español</option>
-        <option value="de">Deutsch</option>
-      </select>
-    </div>
-    <button class="nav-toggle" type="button" hidden aria-expanded="false" aria-controls="primary-nav">
-      <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span>
-      Menü
-    </button>
-  </div>
-</header>
-
-<main id="main">
-  <section class="hero">
-    <div class="wrap">
-      <h1>Sicher online zu bleiben ist eine Fähigkeit. Jeder kann sie erlernen.</h1>
-      <p class="lede">Zolsi.CC erklärt, wie das Internet und soziale Medien wirklich funktionieren, wie die Risiken wirklich aussehen und was zu tun ist, wenn etwas schiefgeht. Kein Fachjargon, keine Schauergeschichten und nichts, wofür man ein Konto braucht.</p>
-      <div class="hero-actions">
-        <a class="btn" href="/lang/de/basics/">Beginne mit Die Grundlagen <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 7h15M11 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a class="arrow" href="/lang/de/get-help/">Es ist bereits etwas passiert <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 7h15M11 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="urgent">
-        <p><strong>Wenn sich ein Kind in unmittelbarer Gefahr befindet, hören Sie auf zu lesen und rufen Sie Ihre örtliche Notrufnummer an</strong> - 112 in der gesamten EU, 999 im Vereinigten Königreich, 911 in den USA und Kanada. Zolsi.CC kann keine Berichte entgegennehmen oder jemanden in Ihrem Namen kontaktieren.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-ruled reveal">
-    <div class="wrap">
-      <h2>Wähle, wo du beginnen möchtest</h2>
-      <p class="lede mt-3">Jede Seite sagt dieselben Dinge mit einer anderen Stimme. Beginne dort, wo es sich richtig anfühlt, und lies die anderen später.</p>
-      <ul class="paths mt-5">
-        <li>
-          <a class="path" href="/lang/de/basics/">
-            <h3 class="path-title">Die Grundlagen</h3>
-            <span class="path-body">Passwörter, Datenschutzeinstellungen, was man sicher teilen kann und wie man einen Betrug erkennt. Das Fundament, auf dem alles andere aufbaut.</span>
-            <span class="path-go">Lies Die Grundlagen <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 7h15M11 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          </a>
-        </li>
-        <li>
-          <a class="path" href="/lang/de/for-teens/">
-            <h3 class="path-title">Für Jugendliche</h3>
-            <span class="path-body">Kurze, ehrliche Antworten über Gruppenchats, Fremde, die zu freundlich sind, Bilder, die man bereut, und wie man Hilfe bekommt, ohne Ärger zu bekommen.</span>
-            <span class="path-go">Lies dies <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 7h15M11 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          </a>
-        </li>
-        <li>
-          <a class="path" href="/lang/de/for-parents/">
-            <h3 class="path-title">Für Eltern und Betreuende</h3>
-            <span class="path-body">Was man überprüfen, was man sagen und wie man reagieren sollte, wenn ein Kind etwas Schwieriges erzählt. Geschrieben für Menschen, die nicht online aufgewachsen sind.</span>
-            <span class="path-go">Lies Für Eltern <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 7h15M11 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section section-ruled reveal">
-    <div class="wrap">
-      <h2>Dinge, die tatsächlich schiefgehen</h2>
-      <ol class="entries mt-5">
-        <li class="entry">
-          <span class="entry-n" aria-hidden="true">01</span>
-          <div class="entry-body">
-            <h3><a href="/lang/de/basics/#passwords">Passwörter und Konten</a></h3>
-            <p>Warum ein wiederverwendetes Passwort jede Tür öffnen kann, die Sie besitzen, und die zwei Änderungen, die dies an einem Nachmittag beheben.</p>
-          </div>
-        </li>
-        <li class="entry">
-          <span class="entry-n" aria-hidden="true">02</span>
-          <div class="entry-body">
-            <h3><a href="/lang/de/basics/#sharing">Was Sie teilen und wer es sehen kann</a></h3>
-            <p>Ein Foto enthält mehr als nur ein Bild. Lerne, was ein Beitrag preisgibt und wie du deine Einstellungen auf jeder Plattform überprüfst.</p>
-          </div>
-        </li>
-        <li class="entry">
-          <span class="entry-n" aria-hidden="true">03</span>
-          <div class="entry-body">
-            <h3><a href="/lang/de/basics/#scams">Betrug, falsche Nachrichten und Druck</a></h3>
-            <p>Fast jeder Betrug nutzt denselben Hebel: Dringlichkeit. Sobald man das Muster benennen kann, verliert es seine Wirkung.</p>
-          </div>
-        </li>
-        <li class="entry">
-          <span class="entry-n" aria-hidden="true">04</span>
-          <div class="entry-body">
-            <h3><a href="/lang/de/warning-signs/">Wenn jemand nicht der ist, der er vorgibt zu sein</a></h3>
-            <p>Grooming und falsche Profile folgen einem erkennbaren Drehbuch. Diese Seite geht es Schritt für Schritt durch, einfach und ohne Drama.</p>
-          </div>
-        </li>
-        <li class="entry">
-          <span class="entry-n" aria-hidden="true">05</span>
-          <div class="entry-body">
-            <h3><a href="/lang/de/for-parents/#talking">Zu Hause darüber sprechen</a></h3>
-            <p>Der größte Schutz, den ein Kind hat, ist der Glaube, dass es Ihnen Dinge erzählen kann, ohne sein Telefon oder Ihr Vertrauen zu verlieren.</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="band reveal">
-    <div class="wrap">
-      <h2 class="band-quote">Drei Gewohnheiten verhindern die meisten Schäden.</h2>
-      <ol class="entries mt-5">
-        <li class="entry">
-          <span class="entry-n" aria-hidden="true">01</span>
-          <div class="entry-body">
-            <h3>Mache langsam, bevor du antwortest</h3>
-            <p>Dringlichkeit ist das Werkzeug. Eine echte Bank, ein echter Freund und ein echter Beamter werden alle fünf Minuten warten, während du überprüfst.</p>
-          </div>
-        </li>
-        <li class="entry">
-          <span class="entry-n" aria-hidden="true">02</span>
-          <div class="entry-body">
-            <h3>Halte private Dinge privat</h3>
-            <p>Deine Adresse, deine Schule, dein Geld und dein Körper sind keine Inhalte. Nichts im Internet braucht sie, um zu funktionieren.</p>
-          </div>
-        </li>
-        <li class="entry">
-          <span class="entry-n" aria-hidden="true">03</span>
-          <div class="entry-body">
-            <h3>Erzähle es jemandem frühzeitig</h3>
-            <p>Fast jede Situation ist am ersten Tag kleiner und leichter zu beheben als am dreißigsten. Heimlichkeit ist das, was sie wachsen lässt.</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section section-ruled reveal">
-    <div class="wrap">
-      <h2>Bevor du weitermachst</h2>
-      <div class="faq mt-5">
-        <details>
-          <summary>Ist Zolsi.CC nur für Kinder?</summary>
-          <div class="faq-body">
-            <p>Nein. Die Seiten zur Kindersicherheit sind das Herzstück der Website, aber dieselben Fähigkeiten schützen alle. Ein Großelternteil, das einen Bankbetrug vermeidet, und ein Vierzehnjähriger, der ein falsches Profil vermeidet, nutzen dieselben drei Gewohnheiten. Jede Seite ist so geschrieben, dass sie laut vorgelesen und von jedem verstanden werden kann.</p>
-          </div>
-        </details>
-        <details>
-          <summary>Muss ich mich gut mit Computern auskennen?</summary>
-          <div class="faq-body">
-            <p>Nein. Nichts hier setzt voraus, dass Sie wissen, was ein Browser, ein VPN oder eine Zwei-Faktor-Authentifizierung ist. Wo ein technisches Wort unvermeidlich ist, wird es beim ersten Auftreten erklärt. Wenn Sie eine Seite nicht verstehen, ist das ein Fehler der Seite, nicht von Ihnen.</p>
-          </div>
-        </details>
-        <details>
-          <summary>Verfolgt diese Website mich?</summary>
-          <div class="faq-body">
-            <p>Nein. Zolsi.CC hat keine Konten, keine Analysen, keine Werbung und keine Tracking-Cookies. Das Einzige, was auf Ihrem Gerät gespeichert wird, ist Ihre gewählte Textgröße, die in Ihrem eigenen Browser aufbewahrt wird, damit die Website sie sich für das nächste Mal merkt. Nichts wird irgendwohin gesendet.</p>
-          </div>
-        </details>
-        <details>
-          <summary>Kann ich Zolsi.CC etwas melden?</summary>
-          <div class="faq-body">
-            <p>Nein, und es ist wichtig, sich darüber im Klaren zu sein. Zolsi.CC ist ein Leitfaden, kein Meldedienst, und niemand hier kann auf eine Meldung reagieren. Die <a href="/lang/de/get-help/">Hilfe holen-Seite</a> listet die Organisationen auf, die das können, einschließlich anonymer, und erklärt, welche wofür genutzt werden soll.</p>
-          </div>
-        </details>
-        <details>
-          <summary>Wer schreibt das?</summary>
-          <div class="faq-body">
-            <p>Zolsi.CC ist ein unabhängiges, nicht-kommerzielles Projekt. Es verkauft nichts und macht keine Werbung. Wo Ratschläge von einer Kinderschutzorganisation stammen, wird diese Organisation genannt und verlinkt, damit Sie das Original lesen können. Siehe <a href="/lang/de/about/">Über Zolsi.CC</a>.</p>
-          </div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-ruled reveal">
-    <div class="wrap">
-      <h2>Wie es weitergeht</h2>
-      <div class="hero-actions">
-        <a class="btn" href="/lang/de/basics/">Die Grundlagen <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 7h15M11 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a class="btn btn-ghost" href="/lang/de/get-help/">Jetzt Hilfe holen <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 7h15M11 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="/assets/img/logo.png" width="256" height="256" alt="">
-        <p>Klar verständliche Anleitung, um online sicher zu bleiben, für Kinder, Eltern und Großeltern.</p>
-      </div>
-      <div>
-        <h2>Lernen</h2>
-        <ul class="footer-list">
-          <li><a href="/lang/de/basics/">Die Grundlagen</a></li>
-          <li><a href="/lang/de/for-teens/">Für Jugendliche</a></li>
-          <li><a href="/lang/de/for-parents/">Für Eltern und Betreuende</a></li>
-          <li><a href="/lang/de/warning-signs/">Warnsignale</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Unterstützung</h2>
-        <ul class="footer-list">
-          <li><a href="/lang/de/get-help/">Jetzt Hilfe holen</a></li>
-          <li><a href="/lang/de/about/">Über Zolsi.CC</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-base">
-      <p>Zolsi.CC ist eine Bildungsressource. Es ist kein Meldedienst und kein Ersatz für die Polizei, eine Hotline oder qualifizierte Fachleute. Wenn jemand in unmittelbarer Gefahr ist, kontaktieren Sie den örtlichen Notruf.</p>
-      <div class="footer-bottom" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; width: 100%;">
-        <p style="margin:0;">&copy; 2026 Zolsi.CC</p>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="/lang/de/">
+          <img
+            src="/assets/img/logo.png"
+            width="256"
+            height="256"
+            alt="Zolsi.CC Startseite"
+          />
+        </a>
+        <nav class="nav" aria-label="Hauptmenü">
+          <ul class="nav-list" id="primary-nav">
+            <li><a href="/lang/de/basics/">Die Grundlagen</a></li>
+            <li><a href="/lang/de/for-teens/">Für Jugendliche</a></li>
+            <li><a href="/lang/de/for-parents/">Für Eltern</a></li>
+            <li><a href="/lang/de/warning-signs/">Warnsignale</a></li>
+            <li><a href="/lang/de/about/">Über uns</a></li>
+            <li class="nav-help">
+              <a href="/lang/de/get-help/">Hilfe holen</a>
+            </li>
+          </ul>
+        </nav>
         <div class="textsize">
-          <label class="textsize-label" for="text-size">Text<span class="u-visually-hidden">größe</span></label>
-          <select id="text-size">
-            <option value="normal">Normal</option>
-            <option value="large">Groß</option>
-            <option value="xlarge">Am größten</option>
+          <label class="textsize-label" for="lang-select">Sprache</label>
+          <select id="lang-select" onchange="window.switchLanguage(this.value)">
+            <option value="en">Englisch</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
           </select>
         </div>
+        <button
+          class="nav-toggle"
+          type="button"
+          hidden
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span class="nav-toggle-bars" aria-hidden="true"
+            ><i></i><i></i><i></i
+          ></span>
+          Menü
+        </button>
       </div>
-    </div>
-  </div>
-</footer>
+    </header>
 
-</body>
+    <main id="main">
+      <section class="hero">
+        <div class="wrap">
+          <h1>
+            Sicher online zu bleiben ist eine Fähigkeit. Jeder kann sie
+            erlernen.
+          </h1>
+          <p class="lede">
+            Zolsi.CC erklärt, wie das Internet und soziale Medien wirklich
+            funktionieren, wie die Risiken wirklich aussehen und was zu tun ist,
+            wenn etwas schiefgeht. Kein Fachjargon, keine Schauergeschichten und
+            nichts, wofür man ein Konto braucht.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="/lang/de/basics/"
+              >Beginne mit Die Grundlagen
+              <svg
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M1 7h15M11 2l5 5-5 5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+            ></a>
+            <a class="arrow" href="/lang/de/get-help/"
+              >Es ist bereits etwas passiert
+              <svg
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M1 7h15M11 2l5 5-5 5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="urgent">
+            <p>
+              <strong
+                >Wenn sich ein Kind in unmittelbarer Gefahr befindet, hören Sie
+                auf zu lesen und rufen Sie Ihre örtliche Notrufnummer an</strong
+              >
+              - 112 in der gesamten EU, 999 im Vereinigten Königreich, 911 in
+              den USA und Kanada. Zolsi.CC kann keine Berichte entgegennehmen
+              oder jemanden in Ihrem Namen kontaktieren.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-ruled reveal">
+        <div class="wrap">
+          <h2>Wähle, wo du beginnen möchtest</h2>
+          <p class="lede mt-3">
+            Jede Seite sagt dieselben Dinge mit einer anderen Stimme. Beginne
+            dort, wo es sich richtig anfühlt, und lies die anderen später.
+          </p>
+          <ul class="paths mt-5">
+            <li>
+              <a class="path" href="/lang/de/basics/">
+                <h3 class="path-title">Die Grundlagen</h3>
+                <span class="path-body"
+                  >Passwörter, Datenschutzeinstellungen, was man sicher teilen
+                  kann und wie man einen Betrug erkennt. Das Fundament, auf dem
+                  alles andere aufbaut.</span
+                >
+                <span class="path-go"
+                  >Lies Die Grundlagen
+                  <svg
+                    width="18"
+                    height="14"
+                    viewBox="0 0 18 14"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M1 7h15M11 2l5 5-5 5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a class="path" href="/lang/de/for-teens/">
+                <h3 class="path-title">Für Jugendliche</h3>
+                <span class="path-body"
+                  >Kurze, ehrliche Antworten über Gruppenchats, Fremde, die zu
+                  freundlich sind, Bilder, die man bereut, und wie man Hilfe
+                  bekommt, ohne Ärger zu bekommen.</span
+                >
+                <span class="path-go"
+                  >Lies dies
+                  <svg
+                    width="18"
+                    height="14"
+                    viewBox="0 0 18 14"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M1 7h15M11 2l5 5-5 5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a class="path" href="/lang/de/for-parents/">
+                <h3 class="path-title">Für Eltern und Betreuende</h3>
+                <span class="path-body"
+                  >Was man überprüfen, was man sagen und wie man reagieren
+                  sollte, wenn ein Kind etwas Schwieriges erzählt. Geschrieben
+                  für Menschen, die nicht online aufgewachsen sind.</span
+                >
+                <span class="path-go"
+                  >Lies Für Eltern
+                  <svg
+                    width="18"
+                    height="14"
+                    viewBox="0 0 18 14"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M1 7h15M11 2l5 5-5 5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                ></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section-ruled reveal">
+        <div class="wrap">
+          <h2>Dinge, die tatsächlich schiefgehen</h2>
+          <ol class="entries mt-5">
+            <li class="entry">
+              <span class="entry-n" aria-hidden="true">01</span>
+              <div class="entry-body">
+                <h3>
+                  <a href="/lang/de/basics/#passwords">Passwörter und Konten</a>
+                </h3>
+                <p>
+                  Warum ein wiederverwendetes Passwort jede Tür öffnen kann, die
+                  Sie besitzen, und die zwei Änderungen, die dies an einem
+                  Nachmittag beheben.
+                </p>
+              </div>
+            </li>
+            <li class="entry">
+              <span class="entry-n" aria-hidden="true">02</span>
+              <div class="entry-body">
+                <h3>
+                  <a href="/lang/de/basics/#sharing"
+                    >Was Sie teilen und wer es sehen kann</a
+                  >
+                </h3>
+                <p>
+                  Ein Foto enthält mehr als nur ein Bild. Lerne, was ein Beitrag
+                  preisgibt und wie du deine Einstellungen auf jeder Plattform
+                  überprüfst.
+                </p>
+              </div>
+            </li>
+            <li class="entry">
+              <span class="entry-n" aria-hidden="true">03</span>
+              <div class="entry-body">
+                <h3>
+                  <a href="/lang/de/basics/#scams"
+                    >Betrug, falsche Nachrichten und Druck</a
+                  >
+                </h3>
+                <p>
+                  Fast jeder Betrug nutzt denselben Hebel: Dringlichkeit. Sobald
+                  man das Muster benennen kann, verliert es seine Wirkung.
+                </p>
+              </div>
+            </li>
+            <li class="entry">
+              <span class="entry-n" aria-hidden="true">04</span>
+              <div class="entry-body">
+                <h3>
+                  <a href="/lang/de/warning-signs/"
+                    >Wenn jemand nicht der ist, der er vorgibt zu sein</a
+                  >
+                </h3>
+                <p>
+                  Grooming und falsche Profile folgen einem erkennbaren
+                  Drehbuch. Diese Seite geht es Schritt für Schritt durch,
+                  einfach und ohne Drama.
+                </p>
+              </div>
+            </li>
+            <li class="entry">
+              <span class="entry-n" aria-hidden="true">05</span>
+              <div class="entry-body">
+                <h3>
+                  <a href="/lang/de/for-parents/#talking"
+                    >Zu Hause darüber sprechen</a
+                  >
+                </h3>
+                <p>
+                  Der größte Schutz, den ein Kind hat, ist der Glaube, dass es
+                  Ihnen Dinge erzählen kann, ohne sein Telefon oder Ihr
+                  Vertrauen zu verlieren.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="band reveal">
+        <div class="wrap">
+          <h2 class="band-quote">
+            Drei Gewohnheiten verhindern die meisten Schäden.
+          </h2>
+          <ol class="entries mt-5">
+            <li class="entry">
+              <span class="entry-n" aria-hidden="true">01</span>
+              <div class="entry-body">
+                <h3>Mache langsam, bevor du antwortest</h3>
+                <p>
+                  Dringlichkeit ist das Werkzeug. Eine echte Bank, ein echter
+                  Freund und ein echter Beamter werden alle fünf Minuten warten,
+                  während du überprüfst.
+                </p>
+              </div>
+            </li>
+            <li class="entry">
+              <span class="entry-n" aria-hidden="true">02</span>
+              <div class="entry-body">
+                <h3>Halte private Dinge privat</h3>
+                <p>
+                  Deine Adresse, deine Schule, dein Geld und dein Körper sind
+                  keine Inhalte. Nichts im Internet braucht sie, um zu
+                  funktionieren.
+                </p>
+              </div>
+            </li>
+            <li class="entry">
+              <span class="entry-n" aria-hidden="true">03</span>
+              <div class="entry-body">
+                <h3>Erzähle es jemandem frühzeitig</h3>
+                <p>
+                  Fast jede Situation ist am ersten Tag kleiner und leichter zu
+                  beheben als am dreißigsten. Heimlichkeit ist das, was sie
+                  wachsen lässt.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section-ruled reveal">
+        <div class="wrap">
+          <h2>Bevor du weitermachst</h2>
+          <div class="faq mt-5">
+            <details>
+              <summary>Ist Zolsi.CC nur für Kinder?</summary>
+              <div class="faq-body">
+                <p>
+                  Nein. Die Seiten zur Kindersicherheit sind das Herzstück der
+                  Website, aber dieselben Fähigkeiten schützen alle. Ein
+                  Großelternteil, das einen Bankbetrug vermeidet, und ein
+                  Vierzehnjähriger, der ein falsches Profil vermeidet, nutzen
+                  dieselben drei Gewohnheiten. Jede Seite ist so geschrieben,
+                  dass sie laut vorgelesen und von jedem verstanden werden kann.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>Muss ich mich gut mit Computern auskennen?</summary>
+              <div class="faq-body">
+                <p>
+                  Nein. Nichts hier setzt voraus, dass Sie wissen, was ein
+                  Browser, ein VPN oder eine Zwei-Faktor-Authentifizierung ist.
+                  Wo ein technisches Wort unvermeidlich ist, wird es beim ersten
+                  Auftreten erklärt. Wenn Sie eine Seite nicht verstehen, ist
+                  das ein Fehler der Seite, nicht von Ihnen.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>Verfolgt diese Website mich?</summary>
+              <div class="faq-body">
+                <p>
+                  Nein. Zolsi.CC hat keine Konten, keine Analysen, keine Werbung
+                  und keine Tracking-Cookies. Das Einzige, was auf Ihrem Gerät
+                  gespeichert wird, ist Ihre gewählte Textgröße, die in Ihrem
+                  eigenen Browser aufbewahrt wird, damit die Website sie sich
+                  für das nächste Mal merkt. Nichts wird irgendwohin gesendet.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>Kann ich Zolsi.CC etwas melden?</summary>
+              <div class="faq-body">
+                <p>
+                  Nein, und es ist wichtig, sich darüber im Klaren zu sein.
+                  Zolsi.CC ist ein Leitfaden, kein Meldedienst, und niemand hier
+                  kann auf eine Meldung reagieren. Die
+                  <a href="/lang/de/get-help/">Hilfe holen-Seite</a> listet die
+                  Organisationen auf, die das können, einschließlich anonymer,
+                  und erklärt, welche wofür genutzt werden soll.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>Wer schreibt das?</summary>
+              <div class="faq-body">
+                <p>
+                  Zolsi.CC ist ein unabhängiges, nicht-kommerzielles Projekt. Es
+                  verkauft nichts und macht keine Werbung. Wo Ratschläge von
+                  einer Kinderschutzorganisation stammen, wird diese
+                  Organisation genannt und verlinkt, damit Sie das Original
+                  lesen können. Siehe
+                  <a href="/lang/de/about/">Über Zolsi.CC</a>.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-ruled reveal">
+        <div class="wrap">
+          <h2>Wie es weitergeht</h2>
+          <div class="hero-actions">
+            <a class="btn" href="/lang/de/basics/"
+              >Die Grundlagen
+              <svg
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M1 7h15M11 2l5 5-5 5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+            ></a>
+            <a class="btn btn-ghost" href="/lang/de/get-help/"
+              >Jetzt Hilfe holen
+              <svg
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M1 7h15M11 2l5 5-5 5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="/assets/img/logo.png" width="256" height="256" alt="" />
+            <p>
+              Klar verständliche Anleitung, um online sicher zu bleiben, für
+              Kinder, Eltern und Großeltern.
+            </p>
+          </div>
+          <div>
+            <h2>Lernen</h2>
+            <ul class="footer-list">
+              <li><a href="/lang/de/basics/">Die Grundlagen</a></li>
+              <li><a href="/lang/de/for-teens/">Für Jugendliche</a></li>
+              <li>
+                <a href="/lang/de/for-parents/">Für Eltern und Betreuende</a>
+              </li>
+              <li><a href="/lang/de/warning-signs/">Warnsignale</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Unterstützung</h2>
+            <ul class="footer-list">
+              <li><a href="/lang/de/get-help/">Jetzt Hilfe holen</a></li>
+              <li><a href="/lang/de/about/">Über Zolsi.CC</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-base">
+          <p>
+            Zolsi.CC ist eine Bildungsressource. Es ist kein Meldedienst und
+            kein Ersatz für die Polizei, eine Hotline oder qualifizierte
+            Fachleute. Wenn jemand in unmittelbarer Gefahr ist, kontaktieren Sie
+            den örtlichen Notruf.
+          </p>
+          <div
+            class="footer-bottom"
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              gap: 1rem;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+            "
+          >
+            <p style="margin: 0">&copy; 2026 Zolsi.CC</p>
+            <div class="textsize">
+              <label class="textsize-label" for="text-size"
+                >Text<span class="u-visually-hidden">größe</span></label
+              >
+              <select id="text-size">
+                <option value="normal">Normal</option>
+                <option value="large">Groß</option>
+                <option value="xlarge">Am größten</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

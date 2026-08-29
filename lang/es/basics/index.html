@@ -1,260 +1,795 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lo básico - Zolsi.CC</title>
-<meta name="description" content="Contraseñas, configuraciones de privacidad, qué es seguro compartir en internet y cómo reconocer una estafa. Los fundamentos de la seguridad en internet en lenguaje sencillo.">
-<link rel="canonical" href="https://zolsi.cc/basics/">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Lo básico - Zolsi.CC">
-<meta property="og:description" content="Contraseñas, configuraciones de privacidad, qué es seguro compartir en internet y cómo reconocer una estafa. Los fundamentos de la seguridad en internet en lenguaje sencillo.">
-<meta property="og:url" content="https://zolsi.cc/basics/">
-<meta property="og:image" content="https://zolsi.cc/assets/img/icon-512.png">
-<meta name="theme-color" content="#faf8f4">
-<link rel="icon" href="/assets/img/icon-32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="/assets/img/icon-180.png">
-<link rel="preload" href="/assets/fonts/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/base.css">
-<link rel="stylesheet" href="/assets/css/components.css">
-<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('zolsi-text');if(t&&t!=='normal')document.documentElement.setAttribute('data-text',t)}catch(e){}</script>
-<script src="/assets/js/site.js" defer></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lo básico - Zolsi.CC</title>
+    <meta
+      name="description"
+      content="Contraseñas, configuraciones de privacidad, qué es seguro compartir en internet y cómo reconocer una estafa. Los fundamentos de la seguridad en internet en lenguaje sencillo."
+    />
+    <link rel="canonical" href="https://zolsi.cc/basics/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Lo básico - Zolsi.CC" />
+    <meta
+      property="og:description"
+      content="Contraseñas, configuraciones de privacidad, qué es seguro compartir en internet y cómo reconocer una estafa. Los fundamentos de la seguridad en internet en lenguaje sencillo."
+    />
+    <meta property="og:url" content="https://zolsi.cc/basics/" />
+    <meta
+      property="og:image"
+      content="https://zolsi.cc/assets/img/icon-512.png"
+    />
+    <meta name="theme-color" content="#faf8f4" />
+    <link rel="icon" href="/assets/img/icon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/assets/img/icon-180.png" />
+    <link
+      rel="preload"
+      href="/assets/fonts/atkinson-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/fraunces-var.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <script>
+      document.documentElement.classList.add("js");
+      try {
+        var t = localStorage.getItem("zolsi-text");
+        if (t && t !== "normal")
+          document.documentElement.setAttribute("data-text", t);
+      } catch (e) {}
+    </script>
+    <script src="/assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Saltar al contenido</a>
 
-<a class="skip" href="#main">Saltar al contenido</a>
-
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="/lang/es/">
-      <img src="/assets/img/logo.png" width="256" height="256" alt="Inicio de Zolsi.CC">
-    </a>
-    <nav class="nav" aria-label="Principal">
-      <ul class="nav-list" id="primary-nav">
-        <li><a href="/lang/es/basics/" aria-current="page">Lo básico</a></li>
-        <li><a href="/lang/es/for-teens/">Para adolescentes</a></li>
-        <li><a href="/lang/es/for-parents/">Para padres</a></li>
-        <li><a href="/lang/es/warning-signs/">Señales de advertencia</a></li>
-        <li><a href="/lang/es/about/">Sobre nosotros</a></li>
-        <li class="nav-help"><a href="/lang/es/get-help/">Conseguir ayuda</a></li>
-      </ul>
-    </nav>
-    <div class="textsize">
-      <label class="textsize-label" for="lang-select">Idioma</label>
-      <select id="lang-select" onchange="window.switchLanguage(this.value)">
-        <option value="en">English</option>
-        <option value="es">Español</option>
-        <option value="de">Deutsch</option>
-      </select>
-    </div>
-    <button class="nav-toggle" type="button" hidden aria-expanded="false" aria-controls="primary-nav">
-      <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span>
-      Menú
-    </button>
-  </div>
-</header>
-
-<main id="main">
-  <section class="hero">
-    <div class="wrap">
-      <h1>Cuatro cosas que vale la pena saber antes que cualquier otra.</h1>
-      <p class="lede">No necesitas entender cómo funciona internet para estar seguro en él. Necesitas cuatro hábitos. Esta página explica cada uno, por qué importa y exactamente qué hacer. Nada aquí toma más de una tarde.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <ol class="entries">
-        <li class="entry">
-          <span class="entry-n" aria-hidden="true">01</span>
-          <div class="entry-body">
-            <h3><a href="#passwords">Contraseñas y cuentas</a></h3>
-            <p>Una contraseña reutilizada puede abrir cada puerta que posees.</p>
-          </div>
-        </li>
-        <li class="entry">
-          <span class="entry-n" aria-hidden="true">02</span>
-          <div class="entry-body">
-            <h3><a href="#sharing">Qué compartes y quién puede verlo</a></h3>
-            <p>Una publicación lleva más que solo la foto que contiene.</p>
-          </div>
-        </li>
-        <li class="entry">
-          <span class="entry-n" aria-hidden="true">03</span>
-          <div class="entry-body">
-            <h3><a href="#scams">Estafas, mensajes falsos y presión</a></h3>
-            <p>Casi toda estafa usa la misma táctica.</p>
-          </div>
-        </li>
-        <li class="entry">
-          <span class="entry-n" aria-hidden="true">04</span>
-          <div class="entry-body">
-            <h3><a href="#settings">Revisar tu configuración</a></h3>
-            <p>Las mismas cinco preguntas funcionan en cada aplicación.</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section section-ruled reveal" id="passwords">
-    <div class="wrap prose">
-      <h2>La longitud supera a la complejidad</h2>
-      <p>La mayoría de las cuentas no son hackeadas. Son abiertas con una contraseña que se filtró en otro lugar. Cuando una tienda, un juego o un foro antiguo sufre una brecha, los pares de correo y contraseña terminan en listas, y alguien las prueba en todas partes. Si usas la misma contraseña en dos lugares, un robo en el más débil es un robo en ambos.</p>
-      <p>Cambiar letras por símbolos no ayuda tanto como la gente piensa. Una contraseña como <strong>Pa$$w0rd!</strong> es corta y predecible. Cuatro palabras comunes seguidas son mucho más difíciles de romper y mucho más fáciles de recordar.</p>
-
-      <div class="callout callout-good">
-        <h4>Haz esto</h4>
-        <ul class="checklist mt-3">
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 10.5l4.5 4.5L17 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Usa una contraseña diferente para tu correo electrónico, tu banco y tus cuentas sociales principales. Si solo arreglas tres, arregla esas tres.</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 10.5l4.5 4.5L17 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Hazlas largas. Cuatro palabras sin relación superan a ocho caracteres mezclados.</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 10.5l4.5 4.5L17 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Activa el inicio de sesión en dos pasos donde se ofrezca. Una aplicación que genera códigos es más fuerte que los códigos por mensaje de texto, porque un número de teléfono puede ser robado.</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 10.5l4.5 4.5L17 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Deja que tu teléfono o navegador recuerde las contraseñas por ti, o usa un gestor de contraseñas. Una lista escrita en un cajón en casa también está bien. El peligro es la reutilización, no el almacenamiento.</span></li>
-        </ul>
-      </div>
-
-      <h3>Tu cuenta de correo es la llave maestra</h3>
-      <p>Casi cualquier otra cuenta puede restablecerse a través de tu correo electrónico. Si alguien entra en él, no necesita ninguna de tus otras contraseñas: simplemente puede pedir a cada sitio que envíe un enlace de restablecimiento. Protege esa cuenta más que el resto y comprueba que el número de teléfono de recuperación y la dirección de respaldo sigan siendo tuyos.</p>
-
-      <div class="callout">
-        <h4>Vale la pena saber</h4>
-        <p>Puedes comprobar si una de tus direcciones ha aparecido en una filtración de datos conocida en <a href="https://haveibeenpwned.com/" rel="noopener">haveibeenpwned.com</a>, un servicio gratuito del investigador de seguridad Troy Hunt. Si es así, cambia esa contraseña en todos los lugares donde la usaste. Estar en la lista es común y no es una señal de que hiciste algo mal.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-ruled reveal" id="sharing">
-    <div class="wrap prose">
-      <h2>Una publicación lleva más que la foto</h2>
-      <p>Cuando pones algo en internet, estás compartiendo tres cosas a la vez: qué hay en el encuadre, qué hay alrededor, y a quién se le permite pasarlo. La primera es obvia. Las otras dos son las que toman a la gente por sorpresa.</p>
-
-      <figure class="figure mt-4">
-        <svg viewBox="0 0 400 236" role="img" aria-labelledby="reach-title">
-          <title id="reach-title">Un diagrama que muestra cuán lejos viaja una publicación: solo tú, luego amigos, luego amigos de amigos, luego todos</title>
-          <text x="0" y="14">Solo tú</text>
-          <rect x="0" y="24" width="58" height="12" fill="currentColor"></rect>
-          <text x="0" y="70">Tus amigos</text>
-          <rect x="0" y="80" width="132" height="12" fill="currentColor"></rect>
-          <text x="0" y="126">Amigos de amigos</text>
-          <rect x="0" y="136" width="246" height="12" fill="currentColor"></rect>
-          <text x="0" y="182">Cualquiera, y las capturas de pantalla duran para siempre</text>
-          <rect x="0" y="192" width="400" height="12" fill="currentColor"></rect>
-        </svg>
-        <figcaption>Cada aplicación tiene una configuración que decide a cuál de estos cuatro estás publicando. La mayoría usa por defecto el más amplio.</figcaption>
-      </figure>
-
-      <h3>Lo que el fondo revela</h3>
-      <p>Una foto tomada en tu puerta puede mostrar el número de la casa. Una foto con el suéter de la escuela muestra qué escuela. Un autobús en la esquina muestra una ruta, y una ruta muestra un vecindario. Ninguno de estos importa por sí solo. Juntos permiten a un extraño descubrir dónde está un niño a las tres y media un martes.</p>
-
-      <div class="callout">
-        <h4>Sobre los datos ocultos de las fotos</h4>
-        <p>Las fotos de un teléfono pueden almacenar el lugar exacto donde se tomaron dentro del archivo mismo. Las grandes plataformas sociales eliminan esto cuando lo subes, pero un archivo enviado directamente, como un adjunto de correo o como un documento en lugar de una foto en una aplicación de chat, a menudo lo conserva. Si estás enviando un archivo original a alguien que no conoces bien, envíalo como foto, no como archivo.</p>
-      </div>
-
-      <h3>Cosas que nunca vale la pena publicar</h3>
-      <ul class="checklist checklist-warn">
-        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.5L18.5 17.5H1.5L10 2.5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 8v3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="14.5" r="1.1" fill="currentColor"/></svg><span>Tu dirección de casa, el nombre de tu escuela o trabajo, o una foto que muestre claramente alguno.</span></li>
-        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.5L18.5 17.5H1.5L10 2.5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 8v3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="14.5" r="1.1" fill="currentColor"/></svg><span>Tu fecha de nacimiento completa junto a tu nombre completo. Juntos se usan para probar la identidad.</span></li>
-        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.5L18.5 17.5H1.5L10 2.5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 8v3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="14.5" r="1.1" fill="currentColor"/></svg><span>Pases de abordar, boletos, tarjetas bancarias o cartas oficiales, incluso parcialmente cubiertas. Los códigos en ellos llevan más información de la que parece.</span></li>
-        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.5L18.5 17.5H1.5L10 2.5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 8v3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="14.5" r="1.1" fill="currentColor"/></svg><span>Una ubicación en vivo. Publicar dónde estás ahora es diferente de publicar dónde estabas la semana pasada.</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section section-ruled reveal" id="scams">
-    <div class="wrap prose">
-      <h2>La urgencia es la táctica</h2>
-      <p>Las estafas difieren enormemente en la superficie. Un paquete que no se puede entregar, una advertencia bancaria, un reembolso de impuestos, un amigo que ha perdido su teléfono y necesita dinero, un trabajo que paga demasiado bien. Debajo, casi todas hacen las mismas cuatro cosas.</p>
-
-      <ul class="checklist checklist-warn">
-        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.5L18.5 17.5H1.5L10 2.5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 8v3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="14.5" r="1.1" fill="currentColor"/></svg><span><strong>Crean una fecha límite.</strong> Actúa ahora, hoy, o la cuenta se cierra y el dinero se pierde.</span></li>
-        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.5L18.5 17.5H1.5L10 2.5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 8v3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="14.5" r="1.1" fill="currentColor"/></svg><span><strong>Piden prestada autoridad.</strong> Un banco, la policía, una empresa de entregas, una plataforma que realmente usas.</span></li>
-        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.5L18.5 17.5H1.5L10 2.5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 8v3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="14.5" r="1.1" fill="currentColor"/></svg><span><strong>Te piden que lo mantengas en secreto</strong>, o que te quedes en el teléfono mientras actúas, para que nadie te convenza de no hacerlo.</span></li>
-        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.5L18.5 17.5H1.5L10 2.5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 8v3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="14.5" r="1.1" fill="currentColor"/></svg><span><strong>Quieren un pago inusual</strong>: códigos de tarjetas de regalo, una transferencia a una cuenta nueva, criptomonedas. Todos estos son difíciles o imposibles de revertir, que es exactamente por lo que los piden.</span></li>
-      </ul>
-
-      <p>Si un mensaje hace tres de esas cuatro, es una estafa, no importa lo que diga ser.</p>
-
-      <div class="callout callout-good">
-        <h4>El movimiento que derrota a casi todos</h4>
-        <p>Detente, y haz el contacto tú mismo a través de una ruta en la que ya confíes. Cuelga y marca el número impreso en tu tarjeta bancaria. Abre la aplicación de la empresa de entregas en lugar de tocar el enlace. Llama a tu nieto al número que siempre has tenido de él. A una organización genuina nunca le importará que le devuelvas la llamada. Un estafador no puede sobrevivir a eso.</p>
-      </div>
-
-      <h3>Dos cosas que nadie legítimo te pedirá nunca</h3>
-      <p>Ningún banco, plataforma, oficina de impuestos o fuerza policial te pedirá tu contraseña completa, o un código de un solo uso que se envió a tu teléfono. Esos códigos existen para mantener a otras personas fuera de tu cuenta. Leer uno en voz alta entrega la cuenta. Si alguien lo pide, eso solo ya te dice quiénes son.</p>
-
-      <h3>Revisar un enlace antes de tocarlo</h3>
-      <p>La parte de una dirección web que importa son las últimas dos palabras antes de la primera barra diagonal simple. En <strong>bank.example-secure.com/login</strong> el sitio real es <strong>example-secure.com</strong>, no tu banco. En una computadora puedes descansar el puntero sobre un enlace y leer la dirección real en la parte inferior de la ventana. En un teléfono, mantén presionado en lugar de tocar, y aparecerá la dirección.</p>
-    </div>
-  </section>
-
-  <section class="section section-ruled reveal" id="settings">
-    <div class="wrap prose">
-      <h2>Cinco preguntas que funcionan en cada aplicación</h2>
-      <p>Los menús de configuración se rediseñan constantemente, por lo que una guía paso a paso para una aplicación se desactualiza en meses. Las preguntas no cambian. Abre la sección de privacidad de cualquier aplicación y encuentra la respuesta a cada una de estas.</p>
-
-      <ol>
-        <li><strong>¿Quién puede ver lo que publico?</strong> Ajústalo a amigos o seguidores que hayas aprobado, no a todos.</li>
-        <li><strong>¿Quién puede enviarme mensajes?</strong> Restringe esto a personas que ya sigues o has aceptado. Esta única configuración elimina la mayoría del contacto no deseado.</li>
-        <li><strong>¿Quién puede encontrarme?</strong> Desactiva las opciones que permiten a la gente encontrar tu perfil por número de teléfono o dirección de correo electrónico.</li>
-        <li><strong>¿Se está compartiendo mi ubicación?</strong> Revisa tanto el uso compartido de ubicación de la propia aplicación como el permiso de tu teléfono para esa aplicación. Ajústalo a mientras usas la aplicación, o desactivado.</li>
-        <li><strong>¿Quién está en mi lista?</strong> Desplázate por tus seguidores o amigos. Elimina a cualquiera que no puedas identificar. No le debes una conexión a nadie.</li>
-      </ol>
-
-      <div class="callout">
-        <h4>Háganlo juntos</h4>
-        <p>Si estás ayudando a un niño o a un pariente mayor, siéntate a su lado y deja que presione los botones mientras tú lees las preguntas en voz alta. La gente recuerda lo que hizo por sí misma, y un niño que participó en establecer las reglas tiene muchas más probabilidades de acudir a ti cuando algo sale mal.</p>
-      </div>
-
-      <div class="pagenav">
-        <a href="/lang/es/warning-signs/">Leer las señales de advertencia <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 7h15M11 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a href="/lang/es/get-help/">Conseguir ayuda ahora <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 7h15M11 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="/assets/img/logo.png" width="256" height="256" alt="">
-        <p>Guía en lenguaje sencillo sobre cómo mantenerse seguro en internet, para niños, padres y abuelos.</p>
-      </div>
-      <div>
-        <h2>Aprender</h2>
-        <ul class="footer-list">
-          <li><a href="/lang/es/basics/">Lo básico</a></li>
-          <li><a href="/lang/es/for-teens/">Para adolescentes</a></li>
-          <li><a href="/lang/es/for-parents/">Para padres y cuidadores</a></li>
-          <li><a href="/lang/es/warning-signs/">Señales de advertencia</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Soporte</h2>
-        <ul class="footer-list">
-          <li><a href="/lang/es/get-help/">Conseguir ayuda ahora</a></li>
-          <li><a href="/lang/es/about/">Sobre Zolsi.CC</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-base">
-      <p>Zolsi.CC es un recurso educativo. No es un servicio de reportes y no sustituye a la policía, a una línea de ayuda o a un profesional cualificado. Si alguien está en peligro inmediato, contacta a tus servicios de emergencia locales.</p>
-      <div class="footer-bottom" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; width: 100%;">
-        <p style="margin:0;">&copy; 2026 Zolsi.CC</p>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="/lang/es/">
+          <img
+            src="/assets/img/logo.png"
+            width="256"
+            height="256"
+            alt="Inicio de Zolsi.CC"
+          />
+        </a>
+        <nav class="nav" aria-label="Principal">
+          <ul class="nav-list" id="primary-nav">
+            <li>
+              <a href="/lang/es/basics/" aria-current="page">Lo básico</a>
+            </li>
+            <li><a href="/lang/es/for-teens/">Para adolescentes</a></li>
+            <li><a href="/lang/es/for-parents/">Para padres</a></li>
+            <li>
+              <a href="/lang/es/warning-signs/">Señales de advertencia</a>
+            </li>
+            <li><a href="/lang/es/about/">Sobre nosotros</a></li>
+            <li class="nav-help">
+              <a href="/lang/es/get-help/">Conseguir ayuda</a>
+            </li>
+          </ul>
+        </nav>
         <div class="textsize">
-          <label class="textsize-label" for="text-size">Tamaño<span class="u-visually-hidden"> de texto</span></label>
-          <select id="text-size">
-            <option value="normal">Normal</option>
-            <option value="large">Grande</option>
-            <option value="xlarge">Muy grande</option>
+          <label class="textsize-label" for="lang-select">Idioma</label>
+          <select id="lang-select" onchange="window.switchLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
           </select>
         </div>
+        <button
+          class="nav-toggle"
+          type="button"
+          hidden
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span class="nav-toggle-bars" aria-hidden="true"
+            ><i></i><i></i><i></i
+          ></span>
+          Menú
+        </button>
       </div>
-    </div>
-  </div>
-</footer>
+    </header>
 
-</body>
+    <main id="main">
+      <section class="hero">
+        <div class="wrap">
+          <h1>Cuatro cosas que vale la pena saber antes que cualquier otra.</h1>
+          <p class="lede">
+            No necesitas entender cómo funciona internet para estar seguro en
+            él. Necesitas cuatro hábitos. Esta página explica cada uno, por qué
+            importa y exactamente qué hacer. Nada aquí toma más de una tarde.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <ol class="entries">
+            <li class="entry">
+              <span class="entry-n" aria-hidden="true">01</span>
+              <div class="entry-body">
+                <h3><a href="#passwords">Contraseñas y cuentas</a></h3>
+                <p>
+                  Una contraseña reutilizada puede abrir cada puerta que posees.
+                </p>
+              </div>
+            </li>
+            <li class="entry">
+              <span class="entry-n" aria-hidden="true">02</span>
+              <div class="entry-body">
+                <h3>
+                  <a href="#sharing">Qué compartes y quién puede verlo</a>
+                </h3>
+                <p>Una publicación lleva más que solo la foto que contiene.</p>
+              </div>
+            </li>
+            <li class="entry">
+              <span class="entry-n" aria-hidden="true">03</span>
+              <div class="entry-body">
+                <h3><a href="#scams">Estafas, mensajes falsos y presión</a></h3>
+                <p>Casi toda estafa usa la misma táctica.</p>
+              </div>
+            </li>
+            <li class="entry">
+              <span class="entry-n" aria-hidden="true">04</span>
+              <div class="entry-body">
+                <h3><a href="#settings">Revisar tu configuración</a></h3>
+                <p>Las mismas cinco preguntas funcionan en cada aplicación.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section-ruled reveal" id="passwords">
+        <div class="wrap prose">
+          <h2>La longitud supera a la complejidad</h2>
+          <p>
+            La mayoría de las cuentas no son hackeadas. Son abiertas con una
+            contraseña que se filtró en otro lugar. Cuando una tienda, un juego
+            o un foro antiguo sufre una brecha, los pares de correo y contraseña
+            terminan en listas, y alguien las prueba en todas partes. Si usas la
+            misma contraseña en dos lugares, un robo en el más débil es un robo
+            en ambos.
+          </p>
+          <p>
+            Cambiar letras por símbolos no ayuda tanto como la gente piensa. Una
+            contraseña como <strong>Pa$$w0rd!</strong> es corta y predecible.
+            Cuatro palabras comunes seguidas son mucho más difíciles de romper y
+            mucho más fáciles de recordar.
+          </p>
+
+          <div class="callout callout-good">
+            <h4>Haz esto</h4>
+            <ul class="checklist mt-3">
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 10.5l4.5 4.5L17 5"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                ><span
+                  >Usa una contraseña diferente para tu correo electrónico, tu
+                  banco y tus cuentas sociales principales. Si solo arreglas
+                  tres, arregla esas tres.</span
+                >
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 10.5l4.5 4.5L17 5"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                ><span
+                  >Hazlas largas. Cuatro palabras sin relación superan a ocho
+                  caracteres mezclados.</span
+                >
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 10.5l4.5 4.5L17 5"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                ><span
+                  >Activa el inicio de sesión en dos pasos donde se ofrezca. Una
+                  aplicación que genera códigos es más fuerte que los códigos
+                  por mensaje de texto, porque un número de teléfono puede ser
+                  robado.</span
+                >
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 10.5l4.5 4.5L17 5"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                ><span
+                  >Deja que tu teléfono o navegador recuerde las contraseñas por
+                  ti, o usa un gestor de contraseñas. Una lista escrita en un
+                  cajón en casa también está bien. El peligro es la
+                  reutilización, no el almacenamiento.</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <h3>Tu cuenta de correo es la llave maestra</h3>
+          <p>
+            Casi cualquier otra cuenta puede restablecerse a través de tu correo
+            electrónico. Si alguien entra en él, no necesita ninguna de tus
+            otras contraseñas: simplemente puede pedir a cada sitio que envíe un
+            enlace de restablecimiento. Protege esa cuenta más que el resto y
+            comprueba que el número de teléfono de recuperación y la dirección
+            de respaldo sigan siendo tuyos.
+          </p>
+
+          <div class="callout">
+            <h4>Vale la pena saber</h4>
+            <p>
+              Puedes comprobar si una de tus direcciones ha aparecido en una
+              filtración de datos conocida en
+              <a href="https://haveibeenpwned.com/" rel="noopener"
+                >haveibeenpwned.com</a
+              >, un servicio gratuito del investigador de seguridad Troy Hunt.
+              Si es así, cambia esa contraseña en todos los lugares donde la
+              usaste. Estar en la lista es común y no es una señal de que
+              hiciste algo mal.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-ruled reveal" id="sharing">
+        <div class="wrap prose">
+          <h2>Una publicación lleva más que la foto</h2>
+          <p>
+            Cuando pones algo en internet, estás compartiendo tres cosas a la
+            vez: qué hay en el encuadre, qué hay alrededor, y a quién se le
+            permite pasarlo. La primera es obvia. Las otras dos son las que
+            toman a la gente por sorpresa.
+          </p>
+
+          <figure class="figure mt-4">
+            <svg viewBox="0 0 400 236" role="img" aria-labelledby="reach-title">
+              <title id="reach-title">
+                Un diagrama que muestra cuán lejos viaja una publicación: solo
+                tú, luego amigos, luego amigos de amigos, luego todos
+              </title>
+              <text x="0" y="14">Solo tú</text>
+              <rect
+                x="0"
+                y="24"
+                width="58"
+                height="12"
+                fill="currentColor"
+              ></rect>
+              <text x="0" y="70">Tus amigos</text>
+              <rect
+                x="0"
+                y="80"
+                width="132"
+                height="12"
+                fill="currentColor"
+              ></rect>
+              <text x="0" y="126">Amigos de amigos</text>
+              <rect
+                x="0"
+                y="136"
+                width="246"
+                height="12"
+                fill="currentColor"
+              ></rect>
+              <text x="0" y="182">
+                Cualquiera, y las capturas de pantalla duran para siempre
+              </text>
+              <rect
+                x="0"
+                y="192"
+                width="400"
+                height="12"
+                fill="currentColor"
+              ></rect>
+            </svg>
+            <figcaption>
+              Cada aplicación tiene una configuración que decide a cuál de estos
+              cuatro estás publicando. La mayoría usa por defecto el más amplio.
+            </figcaption>
+          </figure>
+
+          <h3>Lo que el fondo revela</h3>
+          <p>
+            Una foto tomada en tu puerta puede mostrar el número de la casa. Una
+            foto con el suéter de la escuela muestra qué escuela. Un autobús en
+            la esquina muestra una ruta, y una ruta muestra un vecindario.
+            Ninguno de estos importa por sí solo. Juntos permiten a un extraño
+            descubrir dónde está un niño a las tres y media un martes.
+          </p>
+
+          <div class="callout">
+            <h4>Sobre los datos ocultos de las fotos</h4>
+            <p>
+              Las fotos de un teléfono pueden almacenar el lugar exacto donde se
+              tomaron dentro del archivo mismo. Las grandes plataformas sociales
+              eliminan esto cuando lo subes, pero un archivo enviado
+              directamente, como un adjunto de correo o como un documento en
+              lugar de una foto en una aplicación de chat, a menudo lo conserva.
+              Si estás enviando un archivo original a alguien que no conoces
+              bien, envíalo como foto, no como archivo.
+            </p>
+          </div>
+
+          <h3>Cosas que nunca vale la pena publicar</h3>
+          <ul class="checklist checklist-warn">
+            <li>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M10 2.5L18.5 17.5H1.5L10 2.5z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 8v3.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle cx="10" cy="14.5" r="1.1" fill="currentColor" /></svg
+              ><span
+                >Tu dirección de casa, el nombre de tu escuela o trabajo, o una
+                foto que muestre claramente alguno.</span
+              >
+            </li>
+            <li>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M10 2.5L18.5 17.5H1.5L10 2.5z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 8v3.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle cx="10" cy="14.5" r="1.1" fill="currentColor" /></svg
+              ><span
+                >Tu fecha de nacimiento completa junto a tu nombre completo.
+                Juntos se usan para probar la identidad.</span
+              >
+            </li>
+            <li>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M10 2.5L18.5 17.5H1.5L10 2.5z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 8v3.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle cx="10" cy="14.5" r="1.1" fill="currentColor" /></svg
+              ><span
+                >Pases de abordar, boletos, tarjetas bancarias o cartas
+                oficiales, incluso parcialmente cubiertas. Los códigos en ellos
+                llevan más información de la que parece.</span
+              >
+            </li>
+            <li>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M10 2.5L18.5 17.5H1.5L10 2.5z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 8v3.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle cx="10" cy="14.5" r="1.1" fill="currentColor" /></svg
+              ><span
+                >Una ubicación en vivo. Publicar dónde estás ahora es diferente
+                de publicar dónde estabas la semana pasada.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section-ruled reveal" id="scams">
+        <div class="wrap prose">
+          <h2>La urgencia es la táctica</h2>
+          <p>
+            Las estafas difieren enormemente en la superficie. Un paquete que no
+            se puede entregar, una advertencia bancaria, un reembolso de
+            impuestos, un amigo que ha perdido su teléfono y necesita dinero, un
+            trabajo que paga demasiado bien. Debajo, casi todas hacen las mismas
+            cuatro cosas.
+          </p>
+
+          <ul class="checklist checklist-warn">
+            <li>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M10 2.5L18.5 17.5H1.5L10 2.5z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 8v3.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle cx="10" cy="14.5" r="1.1" fill="currentColor" /></svg
+              ><span
+                ><strong>Crean una fecha límite.</strong> Actúa ahora, hoy, o la
+                cuenta se cierra y el dinero se pierde.</span
+              >
+            </li>
+            <li>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M10 2.5L18.5 17.5H1.5L10 2.5z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 8v3.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle cx="10" cy="14.5" r="1.1" fill="currentColor" /></svg
+              ><span
+                ><strong>Piden prestada autoridad.</strong> Un banco, la
+                policía, una empresa de entregas, una plataforma que realmente
+                usas.</span
+              >
+            </li>
+            <li>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M10 2.5L18.5 17.5H1.5L10 2.5z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 8v3.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle cx="10" cy="14.5" r="1.1" fill="currentColor" /></svg
+              ><span
+                ><strong>Te piden que lo mantengas en secreto</strong>, o que te
+                quedes en el teléfono mientras actúas, para que nadie te
+                convenza de no hacerlo.</span
+              >
+            </li>
+            <li>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M10 2.5L18.5 17.5H1.5L10 2.5z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 8v3.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle cx="10" cy="14.5" r="1.1" fill="currentColor" /></svg
+              ><span
+                ><strong>Quieren un pago inusual</strong>: códigos de tarjetas
+                de regalo, una transferencia a una cuenta nueva, criptomonedas.
+                Todos estos son difíciles o imposibles de revertir, que es
+                exactamente por lo que los piden.</span
+              >
+            </li>
+          </ul>
+
+          <p>
+            Si un mensaje hace tres de esas cuatro, es una estafa, no importa lo
+            que diga ser.
+          </p>
+
+          <div class="callout callout-good">
+            <h4>El movimiento que derrota a casi todos</h4>
+            <p>
+              Detente, y haz el contacto tú mismo a través de una ruta en la que
+              ya confíes. Cuelga y marca el número impreso en tu tarjeta
+              bancaria. Abre la aplicación de la empresa de entregas en lugar de
+              tocar el enlace. Llama a tu nieto al número que siempre has tenido
+              de él. A una organización genuina nunca le importará que le
+              devuelvas la llamada. Un estafador no puede sobrevivir a eso.
+            </p>
+          </div>
+
+          <h3>Dos cosas que nadie legítimo te pedirá nunca</h3>
+          <p>
+            Ningún banco, plataforma, oficina de impuestos o fuerza policial te
+            pedirá tu contraseña completa, o un código de un solo uso que se
+            envió a tu teléfono. Esos códigos existen para mantener a otras
+            personas fuera de tu cuenta. Leer uno en voz alta entrega la cuenta.
+            Si alguien lo pide, eso solo ya te dice quiénes son.
+          </p>
+
+          <h3>Revisar un enlace antes de tocarlo</h3>
+          <p>
+            La parte de una dirección web que importa son las últimas dos
+            palabras antes de la primera barra diagonal simple. En
+            <strong>bank.example-secure.com/login</strong> el sitio real es
+            <strong>example-secure.com</strong>, no tu banco. En una computadora
+            puedes descansar el puntero sobre un enlace y leer la dirección real
+            en la parte inferior de la ventana. En un teléfono, mantén
+            presionado en lugar de tocar, y aparecerá la dirección.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-ruled reveal" id="settings">
+        <div class="wrap prose">
+          <h2>Cinco preguntas que funcionan en cada aplicación</h2>
+          <p>
+            Los menús de configuración se rediseñan constantemente, por lo que
+            una guía paso a paso para una aplicación se desactualiza en meses.
+            Las preguntas no cambian. Abre la sección de privacidad de cualquier
+            aplicación y encuentra la respuesta a cada una de estas.
+          </p>
+
+          <ol>
+            <li>
+              <strong>¿Quién puede ver lo que publico?</strong> Ajústalo a
+              amigos o seguidores que hayas aprobado, no a todos.
+            </li>
+            <li>
+              <strong>¿Quién puede enviarme mensajes?</strong> Restringe esto a
+              personas que ya sigues o has aceptado. Esta única configuración
+              elimina la mayoría del contacto no deseado.
+            </li>
+            <li>
+              <strong>¿Quién puede encontrarme?</strong> Desactiva las opciones
+              que permiten a la gente encontrar tu perfil por número de teléfono
+              o dirección de correo electrónico.
+            </li>
+            <li>
+              <strong>¿Se está compartiendo mi ubicación?</strong> Revisa tanto
+              el uso compartido de ubicación de la propia aplicación como el
+              permiso de tu teléfono para esa aplicación. Ajústalo a mientras
+              usas la aplicación, o desactivado.
+            </li>
+            <li>
+              <strong>¿Quién está en mi lista?</strong> Desplázate por tus
+              seguidores o amigos. Elimina a cualquiera que no puedas
+              identificar. No le debes una conexión a nadie.
+            </li>
+          </ol>
+
+          <div class="callout">
+            <h4>Háganlo juntos</h4>
+            <p>
+              Si estás ayudando a un niño o a un pariente mayor, siéntate a su
+              lado y deja que presione los botones mientras tú lees las
+              preguntas en voz alta. La gente recuerda lo que hizo por sí misma,
+              y un niño que participó en establecer las reglas tiene muchas más
+              probabilidades de acudir a ti cuando algo sale mal.
+            </p>
+          </div>
+
+          <div class="pagenav">
+            <a href="/lang/es/warning-signs/"
+              >Leer las señales de advertencia
+              <svg
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M1 7h15M11 2l5 5-5 5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+            ></a>
+            <a href="/lang/es/get-help/"
+              >Conseguir ayuda ahora
+              <svg
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M1 7h15M11 2l5 5-5 5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="/assets/img/logo.png" width="256" height="256" alt="" />
+            <p>
+              Guía en lenguaje sencillo sobre cómo mantenerse seguro en
+              internet, para niños, padres y abuelos.
+            </p>
+          </div>
+          <div>
+            <h2>Aprender</h2>
+            <ul class="footer-list">
+              <li><a href="/lang/es/basics/">Lo básico</a></li>
+              <li><a href="/lang/es/for-teens/">Para adolescentes</a></li>
+              <li>
+                <a href="/lang/es/for-parents/">Para padres y cuidadores</a>
+              </li>
+              <li>
+                <a href="/lang/es/warning-signs/">Señales de advertencia</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>Soporte</h2>
+            <ul class="footer-list">
+              <li><a href="/lang/es/get-help/">Conseguir ayuda ahora</a></li>
+              <li><a href="/lang/es/about/">Sobre Zolsi.CC</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-base">
+          <p>
+            Zolsi.CC es un recurso educativo. No es un servicio de reportes y no
+            sustituye a la policía, a una línea de ayuda o a un profesional
+            cualificado. Si alguien está en peligro inmediato, contacta a tus
+            servicios de emergencia locales.
+          </p>
+          <div
+            class="footer-bottom"
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              gap: 1rem;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+            "
+          >
+            <p style="margin: 0">&copy; 2026 Zolsi.CC</p>
+            <div class="textsize">
+              <label class="textsize-label" for="text-size"
+                >Tamaño<span class="u-visually-hidden"> de texto</span></label
+              >
+              <select id="text-size">
+                <option value="normal">Normal</option>
+                <option value="large">Grande</option>
+                <option value="xlarge">Muy grande</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

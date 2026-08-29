@@ -1,184 +1,388 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Über Zolsi.CC - Zolsi.CC</title>
-<meta name="description" content="Warum es Zolsi.CC gibt, für wen es ist, wie es geschrieben ist und was es absichtlich nicht tut.">
-<link rel="canonical" href="https://zolsi.cc/about/">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Über Zolsi.CC - Zolsi.CC">
-<meta property="og:description" content="Warum es Zolsi.CC gibt, für wen es ist, wie es geschrieben ist und was es absichtlich nicht tut.">
-<meta property="og:url" content="https://zolsi.cc/about/">
-<meta property="og:image" content="https://zolsi.cc/assets/img/icon-512.png">
-<meta name="theme-color" content="#faf8f4">
-<link rel="icon" href="/assets/img/icon-32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="/assets/img/icon-180.png">
-<link rel="preload" href="/assets/fonts/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/base.css">
-<link rel="stylesheet" href="/assets/css/components.css">
-<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('zolsi-text');if(t&&t!=='normal')document.documentElement.setAttribute('data-text',t)}catch(e){}</script>
-<script src="/assets/js/site.js" defer></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Über Zolsi.CC - Zolsi.CC</title>
+    <meta
+      name="description"
+      content="Warum es Zolsi.CC gibt, für wen es ist, wie es geschrieben ist und was es absichtlich nicht tut."
+    />
+    <link rel="canonical" href="https://zolsi.cc/about/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Über Zolsi.CC - Zolsi.CC" />
+    <meta
+      property="og:description"
+      content="Warum es Zolsi.CC gibt, für wen es ist, wie es geschrieben ist und was es absichtlich nicht tut."
+    />
+    <meta property="og:url" content="https://zolsi.cc/about/" />
+    <meta
+      property="og:image"
+      content="https://zolsi.cc/assets/img/icon-512.png"
+    />
+    <meta name="theme-color" content="#faf8f4" />
+    <link rel="icon" href="/assets/img/icon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/assets/img/icon-180.png" />
+    <link
+      rel="preload"
+      href="/assets/fonts/atkinson-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/fraunces-var.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <script>
+      document.documentElement.classList.add("js");
+      try {
+        var t = localStorage.getItem("zolsi-text");
+        if (t && t !== "normal")
+          document.documentElement.setAttribute("data-text", t);
+      } catch (e) {}
+    </script>
+    <script src="/assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Zum Inhalt springen</a>
 
-<a class="skip" href="#main">Zum Inhalt springen</a>
-
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="/lang/de/">
-      <img src="/assets/img/logo.png" width="256" height="256" alt="Zolsi.CC Startseite">
-    </a>
-    <nav class="nav" aria-label="Hauptmenü">
-      <ul class="nav-list" id="primary-nav">
-        <li><a href="/lang/de/basics/">Die Grundlagen</a></li>
-        <li><a href="/lang/de/for-teens/">Für Jugendliche</a></li>
-        <li><a href="/lang/de/for-parents/">Für Eltern</a></li>
-        <li><a href="/lang/de/warning-signs/">Warnzeichen</a></li>
-        <li><a href="/lang/de/about/" aria-current="page">Über uns</a></li>
-        <li class="nav-help"><a href="/lang/de/get-help/">Hilfe holen</a></li>
-      </ul>
-    </nav>
-    <div class="textsize">
-      <label class="textsize-label" for="lang-select">Sprache</label>
-      <select id="lang-select" onchange="window.switchLanguage(this.value)">
-        <option value="en">Englisch</option>
-        <option value="es">Español</option>
-        <option value="de">Deutsch</option>
-      </select>
-    </div>
-    <button class="nav-toggle" type="button" hidden aria-expanded="false" aria-controls="primary-nav">
-      <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span>
-      Menü
-    </button>
-  </div>
-</header>
-
-<main id="main">
-  <section class="hero">
-    <div class="wrap">
-      <h1>Eine ruhige, kostenlose und ehrliche Seite darüber, wie man online sicher bleibt.</h1>
-      <p class="lede">Zolsi.CC existiert, weil die meisten Ratschläge zur Internetsicherheit entweder für Kinder in einem bevormundenden Ton geschrieben sind oder für Erwachsene in einer unverständlichen Sprache. Diese Seite versucht, für eine zwölfjährige Person lesbar und für eine siebzigjährige Person nützlich zu sein, indem sie für beide dieselben Worte verwendet.</p>
-    </div>
-  </section>
-
-  <section class="section section-ruled reveal">
-    <div class="wrap prose">
-      <h2>Die Lücke, die hiermit gefüllt werden soll</h2>
-      <p>Die Organisationen, die in diesem Bereich die eigentliche Arbeit leisten, sind hervorragend, und diese Seite verlinkt auf sie, anstatt mit ihnen zu konkurrieren. Aber ihr Material ist oft über lange Dokumente verteilt, richtet sich an Fachleute oder ist für das Rechtssystem eines einzigen Landes geschrieben. Jemand, der um elf Uhr abends Angst hat, braucht eine einzige Seite mit einfachen Worten, die ihm sagt, was los ist und was er als Nächstes tun soll.</p>
-      <p>Der andere Grund ist einfacher. Der Rat, der Kinder wirklich schützt, ist nicht technischer Natur. Er lautet, dass ein Kind eine erwachsene Person hat, der es sich anvertrauen kann, ohne bestraft zu werden, und dass beide ein Muster erkennen, wenn es beginnt. Beides erfordert kein Fachwissen. Es erfordert nur, dass es jemand einmal klar gesagt hat.</p>
-    </div>
-  </section>
-
-  <section class="section section-ruled reveal">
-    <div class="wrap">
-      <h2>Prinzipien, an die sich diese Seite hält</h2>
-      <ol class="entries mt-4">
-        <li class="entry">
-          <span class="entry-n" aria-hidden="true">01</span>
-          <div class="entry-body">
-            <h3>Lesbar vor clever</h3>
-            <p>Kurze Sätze und gewöhnliche Wörter. Jeder Fachbegriff wird beim ersten Auftreten erklärt. Der Fließtext ist in Atkinson Hyperlegible gesetzt, einer Schriftart, die vom Braille Institute entwickelt wurde, um für Menschen mit Sehschwäche leichter lesbar zu sein. Die Steuerung der Textgröße in der Kopfzeile ändert die gesamte Seite, nicht nur eine einzelne Unterseite.</p>
-          </div>
-        </li>
-        <li class="entry">
-          <span class="entry-n" aria-hidden="true">02</span>
-          <div class="entry-body">
-            <h3>Ruhig vor dramatisch</h3>
-            <p>Angst lässt Menschen erstarren, und verängstigte Eltern treffen schlechtere Entscheidungen als informierte. Nichts hier ist geschrieben, um zu alarmieren. Die Risiken werden genau beschrieben, was sich meist als weniger beängstigend herausstellt als die vage Vorstellung, die die Menschen bereits mit sich herumtragen.</p>
-          </div>
-        </li>
-        <li class="entry">
-          <span class="entry-n" aria-hidden="true">03</span>
-          <div class="entry-body">
-            <h3>Überprüft oder nicht gesagt</h3>
-            <p>Jede Organisation, Telefonnummer und jeder Dienst auf der Hilfeseite wurde mit der eigenen Website der Organisation abgeglichen, und das Datum der Überprüfung ist dort abgedruckt. Wenn etwas nicht bestätigt werden konnte, steht es nicht auf der Seite.</p>
-          </div>
-        </li>
-        <li class="entry">
-          <span class="entry-n" aria-hidden="true">04</span>
-          <div class="entry-body">
-            <h3>Nichts gesammelt</h3>
-            <p>Keine Konten, keine Analysen, keine Werbung, keine Tracking-Cookies, keine Skripte von Drittanbietern in irgendeiner Form. Das Einzige, was gespeichert wird, ist Ihre gewählte Textgröße, die in Ihrem eigenen Browser verbleibt und niemals irgendwohin gesendet wird. Dies ist eine Seite, die Menschen möglicherweise im schlimmsten Moment ihres Jahres lesen, und sie hat kein Recht zu wissen, wer sie sind.</p>
-          </div>
-        </li>
-        <li class="entry">
-          <span class="entry-n" aria-hidden="true">05</span>
-          <div class="entry-body">
-            <h3>Funktioniert überall</h3>
-            <p>Einfaches HTML und CSS mit ein wenig optionalem JavaScript. Jede Seite ist vollständig lesbar, auch wenn JavaScript ausgeschaltet ist, auf einem alten Telefon, bei einer langsamen Verbindung und mit einem Screenreader. Schriftarten werden von dieser Seite geladen und nicht von einem Drittanbieter.</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="band reveal">
-    <div class="wrap">
-      <p class="band-quote">Zolsi.CC kann Ihnen nicht direkt helfen.</p>
-      <div class="mt-4">
-        <p>Es ist ein Leitfaden, kein Dienst. Es kann keine Meldung entgegennehmen, keine Plattform kontaktieren, kein Bild entfernen oder in Ihrem Namen jemanden erreichen. Niemand hier liest eine Nachricht, die Sie in das Internet senden, in der Hoffnung, dass sie ankommt. Alles auf der <a href="/lang/de/get-help/">Hilfeseite</a> wird von einer Organisation betrieben, die tatsächlich handeln kann, und jede von ihnen ist besser in der Lage, Ihnen zu helfen als diese Seite.</p>
-        <p>Es handelt sich auch nicht um rechtliche oder klinische Beratung. Die Gesetze über Bilder, Einwilligung und Meldung unterscheiden sich stark zwischen den Ländern. Eine Situation, die eine anwaltliche, ärztliche oder therapeutische Hilfe erfordert, braucht genau diese und keine Webseite.</p>
-        <p><a class="arrow" href="/lang/de/get-help/">Gehen Sie zu den Organisationen, die helfen können <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 7h15M11 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-ruled reveal">
-    <div class="wrap prose">
-      <h2>Wenn hier etwas falsch ist</h2>
-      <p>Dann sollte es schnell behoben werden. Veraltete Telefonnummern und kaputte Links sind die wahrscheinlichsten Probleme, und sie sind am wichtigsten, weil jemand in einem schlechten Moment darauf klicken wird.</p>
-      <p>Die gesamte Seite ist öffentlich und Open Source unter <a href="https://github.com/no1qq/zolsi.cc" rel="noopener">github.com/no1qq/zolsi.cc</a>, wo alles gemeldet oder korrigiert werden kann. Die Seite ist unabhängig und nichtkommerziell: Sie verkauft nichts, enthält keine Werbung, akzeptiert kein Sponsoring und ist nicht mit den Organisationen verbunden, auf die sie verlinkt.</p>
-
-      <div class="pagenav">
-        <a href="/lang/de/basics/">Beginnen Sie mit den Grundlagen <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 7h15M11 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a href="/lang/de/get-help/">Holen Sie sich jetzt Hilfe <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 7h15M11 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="/assets/img/logo.png" width="256" height="256" alt="">
-        <p>Klar verständliche Anleitung, um online sicher zu bleiben, für Kinder, Eltern und Großeltern.</p>
-      </div>
-      <div>
-        <h2>Lernen</h2>
-        <ul class="footer-list">
-          <li><a href="/lang/de/basics/">Die Grundlagen</a></li>
-          <li><a href="/lang/de/for-teens/">Für Jugendliche</a></li>
-          <li><a href="/lang/de/for-parents/">Für Eltern und Betreuende</a></li>
-          <li><a href="/lang/de/warning-signs/">Warnzeichen</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Unterstützung</h2>
-        <ul class="footer-list">
-          <li><a href="/lang/de/get-help/">Holen Sie sich jetzt Hilfe</a></li>
-          <li><a href="/lang/de/about/">Über Zolsi.CC</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-base">
-      <p>Zolsi.CC ist eine Bildungsressource. Es ist kein Meldedienst und kein Ersatz für die Polizei, eine Hotline oder qualifizierte Fachleute. Wenn jemand in unmittelbarer Gefahr ist, kontaktieren Sie den örtlichen Notruf.</p>
-      <div class="footer-bottom" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; width: 100%;">
-        <p style="margin:0;">&copy; 2026 Zolsi.CC</p>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="/lang/de/">
+          <img
+            src="/assets/img/logo.png"
+            width="256"
+            height="256"
+            alt="Zolsi.CC Startseite"
+          />
+        </a>
+        <nav class="nav" aria-label="Hauptmenü">
+          <ul class="nav-list" id="primary-nav">
+            <li><a href="/lang/de/basics/">Die Grundlagen</a></li>
+            <li><a href="/lang/de/for-teens/">Für Jugendliche</a></li>
+            <li><a href="/lang/de/for-parents/">Für Eltern</a></li>
+            <li><a href="/lang/de/warning-signs/">Warnzeichen</a></li>
+            <li><a href="/lang/de/about/" aria-current="page">Über uns</a></li>
+            <li class="nav-help">
+              <a href="/lang/de/get-help/">Hilfe holen</a>
+            </li>
+          </ul>
+        </nav>
         <div class="textsize">
-          <label class="textsize-label" for="text-size">Text<span class="u-visually-hidden">größe</span></label>
-          <select id="text-size">
-            <option value="normal">Normal</option>
-            <option value="large">Groß</option>
-            <option value="xlarge">Am größten</option>
+          <label class="textsize-label" for="lang-select">Sprache</label>
+          <select id="lang-select" onchange="window.switchLanguage(this.value)">
+            <option value="en">Englisch</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
           </select>
         </div>
+        <button
+          class="nav-toggle"
+          type="button"
+          hidden
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span class="nav-toggle-bars" aria-hidden="true"
+            ><i></i><i></i><i></i
+          ></span>
+          Menü
+        </button>
       </div>
-    </div>
-  </div>
-</footer>
+    </header>
 
-</body>
+    <main id="main">
+      <section class="hero">
+        <div class="wrap">
+          <h1>
+            Eine ruhige, kostenlose und ehrliche Seite darüber, wie man online
+            sicher bleibt.
+          </h1>
+          <p class="lede">
+            Zolsi.CC existiert, weil die meisten Ratschläge zur
+            Internetsicherheit entweder für Kinder in einem bevormundenden Ton
+            geschrieben sind oder für Erwachsene in einer unverständlichen
+            Sprache. Diese Seite versucht, für eine zwölfjährige Person lesbar
+            und für eine siebzigjährige Person nützlich zu sein, indem sie für
+            beide dieselben Worte verwendet.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-ruled reveal">
+        <div class="wrap prose">
+          <h2>Die Lücke, die hiermit gefüllt werden soll</h2>
+          <p>
+            Die Organisationen, die in diesem Bereich die eigentliche Arbeit
+            leisten, sind hervorragend, und diese Seite verlinkt auf sie,
+            anstatt mit ihnen zu konkurrieren. Aber ihr Material ist oft über
+            lange Dokumente verteilt, richtet sich an Fachleute oder ist für das
+            Rechtssystem eines einzigen Landes geschrieben. Jemand, der um elf
+            Uhr abends Angst hat, braucht eine einzige Seite mit einfachen
+            Worten, die ihm sagt, was los ist und was er als Nächstes tun soll.
+          </p>
+          <p>
+            Der andere Grund ist einfacher. Der Rat, der Kinder wirklich
+            schützt, ist nicht technischer Natur. Er lautet, dass ein Kind eine
+            erwachsene Person hat, der es sich anvertrauen kann, ohne bestraft
+            zu werden, und dass beide ein Muster erkennen, wenn es beginnt.
+            Beides erfordert kein Fachwissen. Es erfordert nur, dass es jemand
+            einmal klar gesagt hat.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-ruled reveal">
+        <div class="wrap">
+          <h2>Prinzipien, an die sich diese Seite hält</h2>
+          <ol class="entries mt-4">
+            <li class="entry">
+              <span class="entry-n" aria-hidden="true">01</span>
+              <div class="entry-body">
+                <h3>Lesbar vor clever</h3>
+                <p>
+                  Kurze Sätze und gewöhnliche Wörter. Jeder Fachbegriff wird
+                  beim ersten Auftreten erklärt. Der Fließtext ist in Atkinson
+                  Hyperlegible gesetzt, einer Schriftart, die vom Braille
+                  Institute entwickelt wurde, um für Menschen mit Sehschwäche
+                  leichter lesbar zu sein. Die Steuerung der Textgröße in der
+                  Kopfzeile ändert die gesamte Seite, nicht nur eine einzelne
+                  Unterseite.
+                </p>
+              </div>
+            </li>
+            <li class="entry">
+              <span class="entry-n" aria-hidden="true">02</span>
+              <div class="entry-body">
+                <h3>Ruhig vor dramatisch</h3>
+                <p>
+                  Angst lässt Menschen erstarren, und verängstigte Eltern
+                  treffen schlechtere Entscheidungen als informierte. Nichts
+                  hier ist geschrieben, um zu alarmieren. Die Risiken werden
+                  genau beschrieben, was sich meist als weniger beängstigend
+                  herausstellt als die vage Vorstellung, die die Menschen
+                  bereits mit sich herumtragen.
+                </p>
+              </div>
+            </li>
+            <li class="entry">
+              <span class="entry-n" aria-hidden="true">03</span>
+              <div class="entry-body">
+                <h3>Überprüft oder nicht gesagt</h3>
+                <p>
+                  Jede Organisation, Telefonnummer und jeder Dienst auf der
+                  Hilfeseite wurde mit der eigenen Website der Organisation
+                  abgeglichen, und das Datum der Überprüfung ist dort
+                  abgedruckt. Wenn etwas nicht bestätigt werden konnte, steht es
+                  nicht auf der Seite.
+                </p>
+              </div>
+            </li>
+            <li class="entry">
+              <span class="entry-n" aria-hidden="true">04</span>
+              <div class="entry-body">
+                <h3>Nichts gesammelt</h3>
+                <p>
+                  Keine Konten, keine Analysen, keine Werbung, keine
+                  Tracking-Cookies, keine Skripte von Drittanbietern in
+                  irgendeiner Form. Das Einzige, was gespeichert wird, ist Ihre
+                  gewählte Textgröße, die in Ihrem eigenen Browser verbleibt und
+                  niemals irgendwohin gesendet wird. Dies ist eine Seite, die
+                  Menschen möglicherweise im schlimmsten Moment ihres Jahres
+                  lesen, und sie hat kein Recht zu wissen, wer sie sind.
+                </p>
+              </div>
+            </li>
+            <li class="entry">
+              <span class="entry-n" aria-hidden="true">05</span>
+              <div class="entry-body">
+                <h3>Funktioniert überall</h3>
+                <p>
+                  Einfaches HTML und CSS mit ein wenig optionalem JavaScript.
+                  Jede Seite ist vollständig lesbar, auch wenn JavaScript
+                  ausgeschaltet ist, auf einem alten Telefon, bei einer
+                  langsamen Verbindung und mit einem Screenreader. Schriftarten
+                  werden von dieser Seite geladen und nicht von einem
+                  Drittanbieter.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="band reveal">
+        <div class="wrap">
+          <p class="band-quote">Zolsi.CC kann Ihnen nicht direkt helfen.</p>
+          <div class="mt-4">
+            <p>
+              Es ist ein Leitfaden, kein Dienst. Es kann keine Meldung
+              entgegennehmen, keine Plattform kontaktieren, kein Bild entfernen
+              oder in Ihrem Namen jemanden erreichen. Niemand hier liest eine
+              Nachricht, die Sie in das Internet senden, in der Hoffnung, dass
+              sie ankommt. Alles auf der
+              <a href="/lang/de/get-help/">Hilfeseite</a> wird von einer
+              Organisation betrieben, die tatsächlich handeln kann, und jede von
+              ihnen ist besser in der Lage, Ihnen zu helfen als diese Seite.
+            </p>
+            <p>
+              Es handelt sich auch nicht um rechtliche oder klinische Beratung.
+              Die Gesetze über Bilder, Einwilligung und Meldung unterscheiden
+              sich stark zwischen den Ländern. Eine Situation, die eine
+              anwaltliche, ärztliche oder therapeutische Hilfe erfordert,
+              braucht genau diese und keine Webseite.
+            </p>
+            <p>
+              <a class="arrow" href="/lang/de/get-help/"
+                >Gehen Sie zu den Organisationen, die helfen können
+                <svg
+                  width="18"
+                  height="14"
+                  viewBox="0 0 18 14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M1 7h15M11 2l5 5-5 5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-ruled reveal">
+        <div class="wrap prose">
+          <h2>Wenn hier etwas falsch ist</h2>
+          <p>
+            Dann sollte es schnell behoben werden. Veraltete Telefonnummern und
+            kaputte Links sind die wahrscheinlichsten Probleme, und sie sind am
+            wichtigsten, weil jemand in einem schlechten Moment darauf klicken
+            wird.
+          </p>
+          <p>
+            Die gesamte Seite ist öffentlich und Open Source unter
+            <a href="https://github.com/no1qq/zolsi.cc" rel="noopener"
+              >github.com/no1qq/zolsi.cc</a
+            >, wo alles gemeldet oder korrigiert werden kann. Die Seite ist
+            unabhängig und nichtkommerziell: Sie verkauft nichts, enthält keine
+            Werbung, akzeptiert kein Sponsoring und ist nicht mit den
+            Organisationen verbunden, auf die sie verlinkt.
+          </p>
+
+          <div class="pagenav">
+            <a href="/lang/de/basics/"
+              >Beginnen Sie mit den Grundlagen
+              <svg
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M1 7h15M11 2l5 5-5 5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+            ></a>
+            <a href="/lang/de/get-help/"
+              >Holen Sie sich jetzt Hilfe
+              <svg
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M1 7h15M11 2l5 5-5 5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="/assets/img/logo.png" width="256" height="256" alt="" />
+            <p>
+              Klar verständliche Anleitung, um online sicher zu bleiben, für
+              Kinder, Eltern und Großeltern.
+            </p>
+          </div>
+          <div>
+            <h2>Lernen</h2>
+            <ul class="footer-list">
+              <li><a href="/lang/de/basics/">Die Grundlagen</a></li>
+              <li><a href="/lang/de/for-teens/">Für Jugendliche</a></li>
+              <li>
+                <a href="/lang/de/for-parents/">Für Eltern und Betreuende</a>
+              </li>
+              <li><a href="/lang/de/warning-signs/">Warnzeichen</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Unterstützung</h2>
+            <ul class="footer-list">
+              <li>
+                <a href="/lang/de/get-help/">Holen Sie sich jetzt Hilfe</a>
+              </li>
+              <li><a href="/lang/de/about/">Über Zolsi.CC</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-base">
+          <p>
+            Zolsi.CC ist eine Bildungsressource. Es ist kein Meldedienst und
+            kein Ersatz für die Polizei, eine Hotline oder qualifizierte
+            Fachleute. Wenn jemand in unmittelbarer Gefahr ist, kontaktieren Sie
+            den örtlichen Notruf.
+          </p>
+          <div
+            class="footer-bottom"
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              gap: 1rem;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+            "
+          >
+            <p style="margin: 0">&copy; 2026 Zolsi.CC</p>
+            <div class="textsize">
+              <label class="textsize-label" for="text-size"
+                >Text<span class="u-visually-hidden">größe</span></label
+              >
+              <select id="text-size">
+                <option value="normal">Normal</option>
+                <option value="large">Groß</option>
+                <option value="xlarge">Am größten</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

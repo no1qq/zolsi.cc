@@ -1,198 +1,534 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Für Eltern und Betreuende - Zolsi.CC</title>
-<meta name="description" content="Was Sie überprüfen, was Sie sagen und wie Sie reagieren sollten, wenn Ihr Kind Ihnen etwas Schwieriges erzählt. Geschrieben für Menschen, die nicht mit dem Internet aufgewachsen sind.">
-<link rel="canonical" href="https://zolsi.cc/for-parents/">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Für Eltern und Betreuende - Zolsi.CC">
-<meta property="og:description" content="Was Sie überprüfen, was Sie sagen und wie Sie reagieren sollten, wenn Ihr Kind Ihnen etwas Schwieriges erzählt. Geschrieben für Menschen, die nicht mit dem Internet aufgewachsen sind.">
-<meta property="og:url" content="https://zolsi.cc/for-parents/">
-<meta property="og:image" content="https://zolsi.cc/assets/img/icon-512.png">
-<meta name="theme-color" content="#faf8f4">
-<link rel="icon" href="/assets/img/icon-32.png" sizes="32x32">
-<link rel="apple-touch-icon" href="/assets/img/icon-180.png">
-<link rel="preload" href="/assets/fonts/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/base.css">
-<link rel="stylesheet" href="/assets/css/components.css">
-<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('zolsi-text');if(t&&t!=='normal')document.documentElement.setAttribute('data-text',t)}catch(e){}</script>
-<script src="/assets/js/site.js" defer></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Für Eltern und Betreuende - Zolsi.CC</title>
+    <meta
+      name="description"
+      content="Was Sie überprüfen, was Sie sagen und wie Sie reagieren sollten, wenn Ihr Kind Ihnen etwas Schwieriges erzählt. Geschrieben für Menschen, die nicht mit dem Internet aufgewachsen sind."
+    />
+    <link rel="canonical" href="https://zolsi.cc/for-parents/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Für Eltern und Betreuende - Zolsi.CC" />
+    <meta
+      property="og:description"
+      content="Was Sie überprüfen, was Sie sagen und wie Sie reagieren sollten, wenn Ihr Kind Ihnen etwas Schwieriges erzählt. Geschrieben für Menschen, die nicht mit dem Internet aufgewachsen sind."
+    />
+    <meta property="og:url" content="https://zolsi.cc/for-parents/" />
+    <meta
+      property="og:image"
+      content="https://zolsi.cc/assets/img/icon-512.png"
+    />
+    <meta name="theme-color" content="#faf8f4" />
+    <link rel="icon" href="/assets/img/icon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/assets/img/icon-180.png" />
+    <link
+      rel="preload"
+      href="/assets/fonts/atkinson-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/fraunces-var.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <script>
+      document.documentElement.classList.add("js");
+      try {
+        var t = localStorage.getItem("zolsi-text");
+        if (t && t !== "normal")
+          document.documentElement.setAttribute("data-text", t);
+      } catch (e) {}
+    </script>
+    <script src="/assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Zum Inhalt springen</a>
 
-<a class="skip" href="#main">Zum Inhalt springen</a>
-
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="/lang/de/">
-      <img src="/assets/img/logo.png" width="256" height="256" alt="Zolsi.CC Startseite">
-    </a>
-    <nav class="nav" aria-label="Hauptmenü">
-      <ul class="nav-list" id="primary-nav">
-        <li><a href="/lang/de/basics/">Die Grundlagen</a></li>
-        <li><a href="/lang/de/for-teens/">Für Jugendliche</a></li>
-        <li><a href="/lang/de/for-parents/" aria-current="page">Für Eltern</a></li>
-        <li><a href="/lang/de/warning-signs/">Warnzeichen</a></li>
-        <li><a href="/lang/de/about/">Über uns</a></li>
-        <li class="nav-help"><a href="/lang/de/get-help/">Hilfe holen</a></li>
-      </ul>
-    </nav>
-    <div class="textsize">
-      <label class="textsize-label" for="lang-select">Sprache</label>
-      <select id="lang-select" onchange="window.switchLanguage(this.value)">
-        <option value="en">Englisch</option>
-        <option value="es">Español</option>
-        <option value="de">Deutsch</option>
-      </select>
-    </div>
-    <button class="nav-toggle" type="button" hidden aria-expanded="false" aria-controls="primary-nav">
-      <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span>
-      Menü
-    </button>
-  </div>
-</header>
-
-<main id="main">
-  <section class="hero">
-    <div class="wrap">
-      <h1>Sie müssen die Apps nicht verstehen. Sie müssen die Person sein, der sie sich anvertrauen.</h1>
-      <p class="lede">Jede Studie darüber, was Kinder online schützt, kommt ungefähr zum selben Ergebnis. Filter und Kontrollen helfen ein wenig. Ein Kind, das glaubt, zu Ihnen kommen zu können, ohne bestraft zu werden, hilft enorm. Auf dieser Seite geht es hauptsächlich um Letzteres.</p>
-    </div>
-  </section>
-
-  <section class="section section-ruled reveal" id="talking">
-    <div class="wrap prose">
-      <h2>Was Sie beim ersten Mal sagen, entscheidet darüber, was Sie beim zweiten Mal hören</h2>
-      <p>Wenn ein Kind Ihnen etwas Beängstigendes erzählt, gibt es eine sehr natürliche erste Reaktion: Alarm, Fragen und das Wegnehmen des Telefons. Das ist verständlich, und es ist der effektivste Weg, um zu garantieren, dass sie es Ihnen beim nächsten Mal nicht erzählen. Kinder wägen ab, ob sie sich Ihnen anvertrauen oder ihr Telefon, ihre Freunde und ihre Unabhängigkeit verlieren, und wenn der Preis hoch genug ist, werden sie es alleine bewältigen. Und alleine wird es nur noch schlimmer.</p>
-
-      <div class="callout callout-good">
-        <h4>Sagen Sie diese Dinge</h4>
-        <ul class="checklist mt-3">
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 10.5l4.5 4.5L17 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>&bdquo;Danke, dass du es mir gesagt hast. Das hat Mut erfordert.&ldquo;</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 10.5l4.5 4.5L17 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>&bdquo;Du hast keinen Ärger. Das ist nicht deine Schuld.&ldquo;</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 10.5l4.5 4.5L17 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>&bdquo;Wir werden das zusammen klären. Du musst nichts alleine machen.&ldquo;</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 10.5l4.5 4.5L17 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>&bdquo;Ich werde dir nicht dein Telefon wegnehmen, weil du mir die Wahrheit gesagt hast.&ldquo; Halten Sie dann dieses Versprechen.</span></li>
-        </ul>
-      </div>
-
-      <div class="callout callout-warn">
-        <h4>Vermeiden Sie dies, auch wenn Sie es fühlen</h4>
-        <p>&bdquo;Warum um alles in der Welt hast du das geschickt?&ldquo; &bdquo;Wie oft habe ich dir das gesagt?&ldquo; &bdquo;So, das Telefon ist jetzt weg.&ldquo; &bdquo;Erzähl das nicht deiner Mutter.&ldquo; Jedes davon lehrt dieselbe Lektion: Probleme zu dieser erwachsenen Person zu bringen, macht die Dinge schlimmer. Ihre Wut ist echt und verständlich. Sie richtet sich gegen die Person, die das getan hat, und sie kann eine Stunde warten.</p>
-      </div>
-
-      <h3>Führen Sie kleine Gespräche, nicht ein großes</h3>
-      <p>Ein einziges ernstes Gespräch über die Gefahren des Internets wird leicht abgenickt und vergessen. Kurze, beiläufige, wiederholte Erwähnungen funktionieren besser. Fragen Sie, welches Spiel sie spielen und wer noch in der Lobby ist. Erwähnen Sie einen Betrug, auf den Sie fast selbst hereingefallen wären, denn das zeigt, dass dies auch Erwachsenen passiert und kein kindlicher Fehler ist. Fragen Sie, was sie tun würden, wenn eine fremde Person ihnen eine Nachricht schicken würde, und lassen Sie sie antworten, ohne sie sofort zu korrigieren.</p>
-      <p>Zielen Sie auf eine klare Vereinbarung ab statt auf eine lange Liste von Regeln: <strong>Du kannst mir immer alles erzählen, und ich werde immer helfen, bevor ich reagiere.</strong></p>
-    </div>
-  </section>
-
-  <section class="section section-ruled reveal">
-    <div class="wrap prose">
-      <h2>Was wirklich etwas bringt</h2>
-      <p>Diese Dinge dauern insgesamt etwa eine Stunde, und sie sind wichtiger als jede App, die Sie installieren können.</p>
-
-      <ol>
-        <li><strong>Setzen Sie sich zusammen und gehen Sie die Datenschutzeinstellungen durch</strong> für jede App, die sie nutzen. Lassen Sie sie die Tasten drücken. Arbeiten Sie die <a href="/lang/de/basics/#settings">fünf Fragen</a> auf der Grundlagen-Seite durch. Die beiden wichtigsten sind, wer ihnen Nachrichten senden kann und wer sehen kann, was sie posten.</li>
-        <li><strong>Schalten Sie Nachrichten von Personen aus, denen sie nicht folgen</strong>, wo immer das möglich ist. Diese eine Änderung entfernt die meisten unerwünschten Annäherungsversuche.</li>
-        <li><strong>Schauen Sie sich an, wer auf der Freundes- oder Follower-Liste steht.</strong> Fragen Sie nach allen, die Sie beide nicht zuordnen können. Tun Sie dies aus Neugier, nicht als Inspektion.</li>
-        <li><strong>Überprüfen Sie die Standortfreigabe</strong> sowohl in der App als auch in den eigenen Berechtigungen des Telefons. Stellen Sie sie auf aus, oder auf nur während der Nutzung der App.</li>
-        <li><strong>Richten Sie die Familien- oder Kinderkonto-Optionen ein</strong>, die die Plattform anbietet, falls Ihr Kind jung genug ist, dass diese sinnvoll sind. Es sind grobe Werkzeuge, aber sie erhöhen den Grundschutz.</li>
-        <li><strong>Wissen Sie, wo sich der Melden-Button befindet</strong> in den Apps, die sie nutzen, bevor Sie ihn brauchen.</li>
-      </ol>
-
-      <div class="callout">
-        <h4>Über Überwachungssoftware</h4>
-        <p>Software, die die Nachrichten Ihres Kindes mitliest, ist ein echter Kompromiss. Sie kann Dinge aufdecken, und sie lehrt ein älteres Kind auch, dass Privatsphäre etwas ist, das man verbergen muss, um sie zu bekommen, was Gespräche auf Konten verlagert, von denen Sie nichts wissen. Wenn Sie sie verwenden, sagen Sie es offen, anstatt sie heimlich zu installieren. Wenn Sie dabei erwischt werden, kostet das mehr Vertrauen, als die Software jemals zurückkauft. Für jüngere Kinder ist es viel weniger problematisch als für Jugendliche.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-ruled reveal">
-    <div class="wrap prose">
-      <h2>Veränderungen, auf die Sie achten sollten</h2>
-      <p>Es gibt keine verlässliche Checkliste, und es ist wichtig, das klar zu sagen. Fast alles auf dieser Liste ist auch einfach ganz normale Pubertät. Was zählt, ist eine Veränderung gegenüber dem normalen Verhalten Ihres Kindes, insbesondere mehrere Veränderungen zusammen, und besonders, wenn sie mit dem Telefon zusammenhängen.</p>
-
-      <ul>
-        <li>Geheimniskrämerei oder Ängstlichkeit speziell im Umgang mit dem Gerät, Verbergen des Bildschirms oder Zusammenzucken bei Benachrichtigungen.</li>
-        <li>Neue Spiele, Geschenke, Guthaben oder Kontogegenstände, die sie nicht erklären können oder die von jemandem online kamen.</li>
-        <li>Zu ungewöhnlichen Zeiten online sein oder anscheinend nach dem Zeitplan einer anderen Person leben.</li>
-        <li>Rückzug von Freunden, Aktivitäten oder der Familie oder ein starker Stimmungsumschwung, nachdem sie online waren.</li>
-        <li>Erwähnung einer älteren Person aus einem Spiel oder einer App, die sie nie genau beschreiben, oder Konten, von deren Existenz Sie nichts wussten.</li>
-        <li>Wörter verwenden oder über Dinge sprechen, die weit über ihr Alter hinausgehen.</li>
-      </ul>
-
-      <p>Wenn Sie dies bemerken, ist die Antwort ein Gespräch, keine Durchsuchung ihres Telefons. Beginnen Sie mit der Sorge um sie statt mit einem Verdacht: &bdquo;Du wirktest in letzter Zeit ein bisschen neben der Spur und ich habe mir Sorgen gemacht, was ist los?&ldquo;</p>
-    </div>
-  </section>
-
-  <section class="section section-ruled reveal">
-    <div class="wrap prose">
-      <h2>Die erste Stunde</h2>
-      <ol>
-        <li><strong>Beruhigen Sie zuerst Ihr Kind.</strong> Alles andere kann fünf Minuten warten. Sie beobachten Ihr Gesicht, um herauszufinden, wie schlimm es ist.</li>
-        <li><strong>Brechen Sie den Kontakt ab.</strong> Antworten Sie nicht und lassen Sie Ihr Kind nicht antworten. Konfrontieren Sie die Person nicht, das warnt sie und kann die Situation eskalieren lassen.</li>
-        <li><strong>Sichern Sie Beweise.</strong> Machen Sie Screenshots von Nachrichten, Profilen, Benutzernamen und Links, bevor Sie blockieren. Löschen Sie nichts.</li>
-        <li><strong>Blockieren und melden</strong> Sie das Konto innerhalb der Plattform.</li>
-        <li><strong>Melden Sie es richtig.</strong> Wenn es um sexuelle Kontakte mit oder Bilder von einem Kind geht, melden Sie es der Polizei oder einer Kinderschutzorganisation. Die <a href="/lang/de/get-help/">Hilfeseite</a> listet auf, welche Organisation was bearbeitet.</li>
-        <li><strong>Lassen Sie Bilder entfernen.</strong> Wenn ein sexuelles Bild Ihres Kindes im Umlauf ist, kann Take It Down es hashen und teilnehmende Plattformen dazu bringen, Kopien zu entfernen, ohne dass das Bild jemals das Gerät verlässt.</li>
-      </ol>
-
-      <div class="callout callout-warn">
-        <h4>Bitte tun Sie dies nicht</h4>
-        <p>Senden Sie das Bild an niemanden, auch nicht an die Polizei, weder per Nachricht noch per E-Mail, und bitten Sie keinen anderen Erwachsenen, es zur Bestätigung anzusehen. Der Besitz oder die Weiterleitung von sexuellen Bildern eines Kindes ist eine schwere Straftat, unabhängig von der Absicht. Melden Sie das Konto und beschreiben Sie, was passiert ist; die ermittelnde Behörde hat rechtliche Wege, mit dem Material selbst umzugehen.</p>
-      </div>
-
-      <div class="pagenav">
-        <a href="/lang/de/warning-signs/">Wie Grooming aussieht <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 7h15M11 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a href="/lang/de/get-help/">Holen Sie sich jetzt Hilfe <svg width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 7h15M11 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="/assets/img/logo.png" width="256" height="256" alt="">
-        <p>Klar verständliche Anleitung, um online sicher zu bleiben, für Kinder, Eltern und Großeltern.</p>
-      </div>
-      <div>
-        <h2>Lernen</h2>
-        <ul class="footer-list">
-          <li><a href="/lang/de/basics/">Die Grundlagen</a></li>
-          <li><a href="/lang/de/for-teens/">Für Jugendliche</a></li>
-          <li><a href="/lang/de/for-parents/">Für Eltern und Betreuende</a></li>
-          <li><a href="/lang/de/warning-signs/">Warnzeichen</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Unterstützung</h2>
-        <ul class="footer-list">
-          <li><a href="/lang/de/get-help/">Holen Sie sich jetzt Hilfe</a></li>
-          <li><a href="/lang/de/about/">Über Zolsi.CC</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-base">
-      <p>Zolsi.CC ist eine Bildungsressource. Es ist kein Meldedienst und kein Ersatz für die Polizei, eine Hotline oder qualifizierte Fachleute. Wenn jemand in unmittelbarer Gefahr ist, kontaktieren Sie den örtlichen Notruf.</p>
-      <div class="footer-bottom" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; width: 100%;">
-        <p style="margin:0;">&copy; 2026 Zolsi.CC</p>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="/lang/de/">
+          <img
+            src="/assets/img/logo.png"
+            width="256"
+            height="256"
+            alt="Zolsi.CC Startseite"
+          />
+        </a>
+        <nav class="nav" aria-label="Hauptmenü">
+          <ul class="nav-list" id="primary-nav">
+            <li><a href="/lang/de/basics/">Die Grundlagen</a></li>
+            <li><a href="/lang/de/for-teens/">Für Jugendliche</a></li>
+            <li>
+              <a href="/lang/de/for-parents/" aria-current="page">Für Eltern</a>
+            </li>
+            <li><a href="/lang/de/warning-signs/">Warnzeichen</a></li>
+            <li><a href="/lang/de/about/">Über uns</a></li>
+            <li class="nav-help">
+              <a href="/lang/de/get-help/">Hilfe holen</a>
+            </li>
+          </ul>
+        </nav>
         <div class="textsize">
-          <label class="textsize-label" for="text-size">Text<span class="u-visually-hidden">größe</span></label>
-          <select id="text-size">
-            <option value="normal">Normal</option>
-            <option value="large">Groß</option>
-            <option value="xlarge">Am größten</option>
+          <label class="textsize-label" for="lang-select">Sprache</label>
+          <select id="lang-select" onchange="window.switchLanguage(this.value)">
+            <option value="en">Englisch</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
           </select>
         </div>
+        <button
+          class="nav-toggle"
+          type="button"
+          hidden
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span class="nav-toggle-bars" aria-hidden="true"
+            ><i></i><i></i><i></i
+          ></span>
+          Menü
+        </button>
       </div>
-    </div>
-  </div>
-</footer>
+    </header>
 
-</body>
+    <main id="main">
+      <section class="hero">
+        <div class="wrap">
+          <h1>
+            Sie müssen die Apps nicht verstehen. Sie müssen die Person sein, der
+            sie sich anvertrauen.
+          </h1>
+          <p class="lede">
+            Jede Studie darüber, was Kinder online schützt, kommt ungefähr zum
+            selben Ergebnis. Filter und Kontrollen helfen ein wenig. Ein Kind,
+            das glaubt, zu Ihnen kommen zu können, ohne bestraft zu werden,
+            hilft enorm. Auf dieser Seite geht es hauptsächlich um Letzteres.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-ruled reveal" id="talking">
+        <div class="wrap prose">
+          <h2>
+            Was Sie beim ersten Mal sagen, entscheidet darüber, was Sie beim
+            zweiten Mal hören
+          </h2>
+          <p>
+            Wenn ein Kind Ihnen etwas Beängstigendes erzählt, gibt es eine sehr
+            natürliche erste Reaktion: Alarm, Fragen und das Wegnehmen des
+            Telefons. Das ist verständlich, und es ist der effektivste Weg, um
+            zu garantieren, dass sie es Ihnen beim nächsten Mal nicht erzählen.
+            Kinder wägen ab, ob sie sich Ihnen anvertrauen oder ihr Telefon,
+            ihre Freunde und ihre Unabhängigkeit verlieren, und wenn der Preis
+            hoch genug ist, werden sie es alleine bewältigen. Und alleine wird
+            es nur noch schlimmer.
+          </p>
+
+          <div class="callout callout-good">
+            <h4>Sagen Sie diese Dinge</h4>
+            <ul class="checklist mt-3">
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 10.5l4.5 4.5L17 5"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                ><span
+                  >&bdquo;Danke, dass du es mir gesagt hast. Das hat Mut
+                  erfordert.&ldquo;</span
+                >
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 10.5l4.5 4.5L17 5"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                ><span
+                  >&bdquo;Du hast keinen Ärger. Das ist nicht deine
+                  Schuld.&ldquo;</span
+                >
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 10.5l4.5 4.5L17 5"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                ><span
+                  >&bdquo;Wir werden das zusammen klären. Du musst nichts
+                  alleine machen.&ldquo;</span
+                >
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 10.5l4.5 4.5L17 5"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+                ><span
+                  >&bdquo;Ich werde dir nicht dein Telefon wegnehmen, weil du
+                  mir die Wahrheit gesagt hast.&ldquo; Halten Sie dann dieses
+                  Versprechen.</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="callout callout-warn">
+            <h4>Vermeiden Sie dies, auch wenn Sie es fühlen</h4>
+            <p>
+              &bdquo;Warum um alles in der Welt hast du das geschickt?&ldquo;
+              &bdquo;Wie oft habe ich dir das gesagt?&ldquo; &bdquo;So, das
+              Telefon ist jetzt weg.&ldquo; &bdquo;Erzähl das nicht deiner
+              Mutter.&ldquo; Jedes davon lehrt dieselbe Lektion: Probleme zu
+              dieser erwachsenen Person zu bringen, macht die Dinge schlimmer.
+              Ihre Wut ist echt und verständlich. Sie richtet sich gegen die
+              Person, die das getan hat, und sie kann eine Stunde warten.
+            </p>
+          </div>
+
+          <h3>Führen Sie kleine Gespräche, nicht ein großes</h3>
+          <p>
+            Ein einziges ernstes Gespräch über die Gefahren des Internets wird
+            leicht abgenickt und vergessen. Kurze, beiläufige, wiederholte
+            Erwähnungen funktionieren besser. Fragen Sie, welches Spiel sie
+            spielen und wer noch in der Lobby ist. Erwähnen Sie einen Betrug,
+            auf den Sie fast selbst hereingefallen wären, denn das zeigt, dass
+            dies auch Erwachsenen passiert und kein kindlicher Fehler ist.
+            Fragen Sie, was sie tun würden, wenn eine fremde Person ihnen eine
+            Nachricht schicken würde, und lassen Sie sie antworten, ohne sie
+            sofort zu korrigieren.
+          </p>
+          <p>
+            Zielen Sie auf eine klare Vereinbarung ab statt auf eine lange Liste
+            von Regeln:
+            <strong
+              >Du kannst mir immer alles erzählen, und ich werde immer helfen,
+              bevor ich reagiere.</strong
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-ruled reveal">
+        <div class="wrap prose">
+          <h2>Was wirklich etwas bringt</h2>
+          <p>
+            Diese Dinge dauern insgesamt etwa eine Stunde, und sie sind
+            wichtiger als jede App, die Sie installieren können.
+          </p>
+
+          <ol>
+            <li>
+              <strong
+                >Setzen Sie sich zusammen und gehen Sie die
+                Datenschutzeinstellungen durch</strong
+              >
+              für jede App, die sie nutzen. Lassen Sie sie die Tasten drücken.
+              Arbeiten Sie die
+              <a href="/lang/de/basics/#settings">fünf Fragen</a> auf der
+              Grundlagen-Seite durch. Die beiden wichtigsten sind, wer ihnen
+              Nachrichten senden kann und wer sehen kann, was sie posten.
+            </li>
+            <li>
+              <strong
+                >Schalten Sie Nachrichten von Personen aus, denen sie nicht
+                folgen</strong
+              >, wo immer das möglich ist. Diese eine Änderung entfernt die
+              meisten unerwünschten Annäherungsversuche.
+            </li>
+            <li>
+              <strong
+                >Schauen Sie sich an, wer auf der Freundes- oder Follower-Liste
+                steht.</strong
+              >
+              Fragen Sie nach allen, die Sie beide nicht zuordnen können. Tun
+              Sie dies aus Neugier, nicht als Inspektion.
+            </li>
+            <li>
+              <strong>Überprüfen Sie die Standortfreigabe</strong> sowohl in der
+              App als auch in den eigenen Berechtigungen des Telefons. Stellen
+              Sie sie auf aus, oder auf nur während der Nutzung der App.
+            </li>
+            <li>
+              <strong
+                >Richten Sie die Familien- oder Kinderkonto-Optionen ein</strong
+              >, die die Plattform anbietet, falls Ihr Kind jung genug ist, dass
+              diese sinnvoll sind. Es sind grobe Werkzeuge, aber sie erhöhen den
+              Grundschutz.
+            </li>
+            <li>
+              <strong>Wissen Sie, wo sich der Melden-Button befindet</strong> in
+              den Apps, die sie nutzen, bevor Sie ihn brauchen.
+            </li>
+          </ol>
+
+          <div class="callout">
+            <h4>Über Überwachungssoftware</h4>
+            <p>
+              Software, die die Nachrichten Ihres Kindes mitliest, ist ein
+              echter Kompromiss. Sie kann Dinge aufdecken, und sie lehrt ein
+              älteres Kind auch, dass Privatsphäre etwas ist, das man verbergen
+              muss, um sie zu bekommen, was Gespräche auf Konten verlagert, von
+              denen Sie nichts wissen. Wenn Sie sie verwenden, sagen Sie es
+              offen, anstatt sie heimlich zu installieren. Wenn Sie dabei
+              erwischt werden, kostet das mehr Vertrauen, als die Software
+              jemals zurückkauft. Für jüngere Kinder ist es viel weniger
+              problematisch als für Jugendliche.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-ruled reveal">
+        <div class="wrap prose">
+          <h2>Veränderungen, auf die Sie achten sollten</h2>
+          <p>
+            Es gibt keine verlässliche Checkliste, und es ist wichtig, das klar
+            zu sagen. Fast alles auf dieser Liste ist auch einfach ganz normale
+            Pubertät. Was zählt, ist eine Veränderung gegenüber dem normalen
+            Verhalten Ihres Kindes, insbesondere mehrere Veränderungen zusammen,
+            und besonders, wenn sie mit dem Telefon zusammenhängen.
+          </p>
+
+          <ul>
+            <li>
+              Geheimniskrämerei oder Ängstlichkeit speziell im Umgang mit dem
+              Gerät, Verbergen des Bildschirms oder Zusammenzucken bei
+              Benachrichtigungen.
+            </li>
+            <li>
+              Neue Spiele, Geschenke, Guthaben oder Kontogegenstände, die sie
+              nicht erklären können oder die von jemandem online kamen.
+            </li>
+            <li>
+              Zu ungewöhnlichen Zeiten online sein oder anscheinend nach dem
+              Zeitplan einer anderen Person leben.
+            </li>
+            <li>
+              Rückzug von Freunden, Aktivitäten oder der Familie oder ein
+              starker Stimmungsumschwung, nachdem sie online waren.
+            </li>
+            <li>
+              Erwähnung einer älteren Person aus einem Spiel oder einer App, die
+              sie nie genau beschreiben, oder Konten, von deren Existenz Sie
+              nichts wussten.
+            </li>
+            <li>
+              Wörter verwenden oder über Dinge sprechen, die weit über ihr Alter
+              hinausgehen.
+            </li>
+          </ul>
+
+          <p>
+            Wenn Sie dies bemerken, ist die Antwort ein Gespräch, keine
+            Durchsuchung ihres Telefons. Beginnen Sie mit der Sorge um sie statt
+            mit einem Verdacht: &bdquo;Du wirktest in letzter Zeit ein bisschen
+            neben der Spur und ich habe mir Sorgen gemacht, was ist los?&ldquo;
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-ruled reveal">
+        <div class="wrap prose">
+          <h2>Die erste Stunde</h2>
+          <ol>
+            <li>
+              <strong>Beruhigen Sie zuerst Ihr Kind.</strong> Alles andere kann
+              fünf Minuten warten. Sie beobachten Ihr Gesicht, um
+              herauszufinden, wie schlimm es ist.
+            </li>
+            <li>
+              <strong>Brechen Sie den Kontakt ab.</strong> Antworten Sie nicht
+              und lassen Sie Ihr Kind nicht antworten. Konfrontieren Sie die
+              Person nicht, das warnt sie und kann die Situation eskalieren
+              lassen.
+            </li>
+            <li>
+              <strong>Sichern Sie Beweise.</strong> Machen Sie Screenshots von
+              Nachrichten, Profilen, Benutzernamen und Links, bevor Sie
+              blockieren. Löschen Sie nichts.
+            </li>
+            <li>
+              <strong>Blockieren und melden</strong> Sie das Konto innerhalb der
+              Plattform.
+            </li>
+            <li>
+              <strong>Melden Sie es richtig.</strong> Wenn es um sexuelle
+              Kontakte mit oder Bilder von einem Kind geht, melden Sie es der
+              Polizei oder einer Kinderschutzorganisation. Die
+              <a href="/lang/de/get-help/">Hilfeseite</a> listet auf, welche
+              Organisation was bearbeitet.
+            </li>
+            <li>
+              <strong>Lassen Sie Bilder entfernen.</strong> Wenn ein sexuelles
+              Bild Ihres Kindes im Umlauf ist, kann Take It Down es hashen und
+              teilnehmende Plattformen dazu bringen, Kopien zu entfernen, ohne
+              dass das Bild jemals das Gerät verlässt.
+            </li>
+          </ol>
+
+          <div class="callout callout-warn">
+            <h4>Bitte tun Sie dies nicht</h4>
+            <p>
+              Senden Sie das Bild an niemanden, auch nicht an die Polizei, weder
+              per Nachricht noch per E-Mail, und bitten Sie keinen anderen
+              Erwachsenen, es zur Bestätigung anzusehen. Der Besitz oder die
+              Weiterleitung von sexuellen Bildern eines Kindes ist eine schwere
+              Straftat, unabhängig von der Absicht. Melden Sie das Konto und
+              beschreiben Sie, was passiert ist; die ermittelnde Behörde hat
+              rechtliche Wege, mit dem Material selbst umzugehen.
+            </p>
+          </div>
+
+          <div class="pagenav">
+            <a href="/lang/de/warning-signs/"
+              >Wie Grooming aussieht
+              <svg
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M1 7h15M11 2l5 5-5 5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+            ></a>
+            <a href="/lang/de/get-help/"
+              >Holen Sie sich jetzt Hilfe
+              <svg
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M1 7h15M11 2l5 5-5 5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="/assets/img/logo.png" width="256" height="256" alt="" />
+            <p>
+              Klar verständliche Anleitung, um online sicher zu bleiben, für
+              Kinder, Eltern und Großeltern.
+            </p>
+          </div>
+          <div>
+            <h2>Lernen</h2>
+            <ul class="footer-list">
+              <li><a href="/lang/de/basics/">Die Grundlagen</a></li>
+              <li><a href="/lang/de/for-teens/">Für Jugendliche</a></li>
+              <li>
+                <a href="/lang/de/for-parents/">Für Eltern und Betreuende</a>
+              </li>
+              <li><a href="/lang/de/warning-signs/">Warnzeichen</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Unterstützung</h2>
+            <ul class="footer-list">
+              <li>
+                <a href="/lang/de/get-help/">Holen Sie sich jetzt Hilfe</a>
+              </li>
+              <li><a href="/lang/de/about/">Über Zolsi.CC</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-base">
+          <p>
+            Zolsi.CC ist eine Bildungsressource. Es ist kein Meldedienst und
+            kein Ersatz für die Polizei, eine Hotline oder qualifizierte
+            Fachleute. Wenn jemand in unmittelbarer Gefahr ist, kontaktieren Sie
+            den örtlichen Notruf.
+          </p>
+          <div
+            class="footer-bottom"
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              gap: 1rem;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+            "
+          >
+            <p style="margin: 0">&copy; 2026 Zolsi.CC</p>
+            <div class="textsize">
+              <label class="textsize-label" for="text-size"
+                >Text<span class="u-visually-hidden">größe</span></label
+              >
+              <select id="text-size">
+                <option value="normal">Normal</option>
+                <option value="large">Groß</option>
+                <option value="xlarge">Am größten</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
