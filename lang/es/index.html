@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="utf-8">
@@ -41,11 +41,11 @@
       </ul>
     </nav>
     <div class="textsize">
-      <label class="textsize-label" for="text-size">Tamaño<span class="u-visually-hidden"> del texto</span></label>
-      <select id="text-size">
-        <option value="normal">Normal</option>
-        <option value="large">Grande</option>
-        <option value="xlarge">Muy grande</option>
+      <label class="textsize-label" for="lang-select">Idioma</label>
+      <select id="lang-select" onchange="window.switchLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="de">Deutsch</option>
       </select>
     </div>
     <button class="nav-toggle" type="button" hidden aria-expanded="false" aria-controls="primary-nav">
@@ -255,11 +255,11 @@
       <div class="footer-bottom" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; width: 100%;">
         <p style="margin:0;">&copy; 2026 Zolsi.CC</p>
         <div class="textsize">
-          <label class="textsize-label u-visually-hidden" for="lang-select">Idioma</label>
-          <select id="lang-select" onchange="window.switchLanguage(this.value)">
-            <option value="en">English</option>
-            <option value="es">Español</option>
-            <option value="de">Deutsch</option>
+          <label class="textsize-label" for="text-size">Tamaño<span class="u-visually-hidden"> del texto</span></label>
+          <select id="text-size">
+            <option value="normal">Normal</option>
+            <option value="large">Grande</option>
+            <option value="xlarge">Muy grande</option>
           </select>
         </div>
       </div>

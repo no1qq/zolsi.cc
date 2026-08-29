@@ -176,14 +176,12 @@ html:not(.js) .textsize {
   pointer-events: none;
 }
 
-@supports selector(:has(*)) {
-  .textsize:has(select:focus-visible) {
-    outline: 3px solid var(--focus);
-    outline-offset: 3px;
-  }
-  .textsize select:focus-visible {
-    outline: none;
-  }
+.textsize select:focus,
+.textsize select:focus-visible {
+  outline: none;
+}
+.textsize:focus-within {
+  outline: none;
 }
 
 @media (max-width: 63.999em) {
